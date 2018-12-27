@@ -5,7 +5,7 @@ Für weitere Informationen über die RS41 [meine Website](https://example.com).
 
 Der blockweise Aufbau der RS41 soll im nachfolgenden beschrieben werden. Bereitgestellt wird weiterhin der Schaltplan im Eagle-Format, Logic-Analyzer-Aufzeichnungen der funktionalen Blöcke und hochauflösende Scans der Leiterplatten.
 
-Die Untersuchung der RPM411 Tochterplatine mit barometrischem Sensor ist im separaten Unterordner zu finden
+Die Untersuchung der RPM411 Tochterplatine mit barometrischem Sensor ist im separaten Unterordner zu finden.
 
 # ToDo
 * Werte der passiven Bauteile identifizieren
@@ -39,7 +39,7 @@ Die Stromversorgung lässt sich in drei Teile einteilen
 Als Boost-Converter kommt ein [TPS61200](http://www.ti.com/lit/ds/symlink/tps61200.pdf) U502 von TI zum Einsatz, desen Beschaltung der Typical Application entspricht. Im Eingangskreis befindet sich zunächst eine SMD-Sicherung R502 und eine Clamping-Diode D501. Zwischen Batterie und Boost-Converter befindet sich ein P-Kanal MOSFET Q501, der während der Lagerung durch den Pullup-Widerstand R501 geschlossen ist. Q501 kann durch eine hartverdahtete Logik (s.u.) geöffnet oder wieder geschlossen werden, um die Sonde ein- oder auszuschalten.
 
 ## LDOs
-Es werden [TVS70030](http://www.ti.com/lit/ds/symlink/tlv700-q1.pdf) von TI eingesetzt. U501 erzeugt die Spannung für den Mikrocontroller (MCU), U503 für das Mess-Frontend und U504 für das GPS-Modul. Pin 4 der LDOs, der Laut Datenblatt NC ist, ist gegen Masse entkoppelt, vermutlich damit auch ansonsten pinkompatible Versionen wie der [MAX997](https://datasheets.maximintegrated.com/en/ds/MAX8887-MAX8888.pdf) eingesetzt werden können.
+Es werden [TVS70030](http://www.ti.com/lit/ds/symlink/tlv700-q1.pdf) von TI eingesetzt. U501 erzeugt die Spannung für den Mikrocontroller (MCU), U503 für das Mess-Frontend und U504 für das GPS-Modul. Pin 4 der LDOs, der Laut Datenblatt NC ist, ist gegen Masse entkoppelt, vermutlich damit auch ansonsten pinkompatible Versionen wie der [MAX8887](https://datasheets.maximintegrated.com/en/ds/MAX8887-MAX8888.pdf) eingesetzt werden können.
 
 ## Hartverdrahtete Logik
 Der oben besprochene P-Kanal MOSFET Q501 wird durch einen N-Kanal MOSFET Q502 gesteuert. 
@@ -55,3 +55,6 @@ Um sie wieder auszuschalten, kann der MCU den N-Kanal MOSFET Q503 schließen, wa
 Der Taster an der Unterseite der Sonde S501 schaltet das Gate von Q502 ebenfalls über R507 auf HIGH. Damit der Mikrocontroller auch den Zustand des Tasters abfragen kann, ist die Gatespannung von Q502 über den Spannungsteiler R506 und R512/C524 an einen ADC-Eingang des MCU geführt werden. Ausgewerter wird hier der geringere Spannungsabfall über R507, der zu einer höheren Gatepannung führt, wenn dieser gedrückt ist.
 
 Letztlich kann auch die Batteriespannung selbst über den Spannungsteiler R508 und R512/C524 ausgewertet werden.
+
+# Mikrocontroller
+![Microcontroller](__used_img__/mcu_sch.png?raw=true "Microcontroller")
