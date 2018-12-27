@@ -7,7 +7,7 @@ Der blockweise Aufbau der RS41 soll im nachfolgenden beschrieben werden. Bereitg
 
 Die Untersuchung der RPM411 Tochterplatine mit barometrischem Sensor ist im separaten Unterordner zu finden
 
-#ToDo
+# ToDo
 * Werte der passiven Bauteile identifizieren
 * Herausfinden, welche der im Schaltpaln eingetragen Widerstände in Wahrheit ESD-Surpressor etc. sind.
 * Detaillierte Beschreibung des SPI-Busses
@@ -16,7 +16,7 @@ Die Untersuchung der RPM411 Tochterplatine mit barometrischem Sensor ist im sepa
 * Sniffing der Kommunikation zwischen RI41 Groundcheck Device und RS41
 * Flashdump des Controllers erhalten und reversen
 
-#Einleitung
+# Einleitung
 Die Sonde ist in sechs funktionale Baugruppen zu unterteilen, die auf dem nachfolgengen Bild hervorgehoben sind.
 
 * Stromversorgung
@@ -26,20 +26,20 @@ Die Sonde ist in sechs funktionale Baugruppen zu unterteilen, die auf dem nachfo
 * Radio
 * Interface
 
-#Stromversorgung
+# Stromversorgung
 Die Stromversorgung lässt sich in drei Teile einteilen
 
 * ein Boost-Converter erzeugt 3,8 V Spannung aus der variablen Batteriespannung
 * drei Low Dropout Regulators (LDOs) erzeugen aus diesen jeweils eine 3-V-Schiene für unterschiedliche Schaltungsteile
 * eine hartverdrahtete Logik ermittelt den Betriebszustand des Boostconverters und damit der Sonde
 
-##Boost-Converter
+## Boost-Converter
 Als Boost-Converter kommt ein [TPS61200](http://www.ti.com/lit/ds/symlink/tps61200.pdf) U502 von TI zum Einsatz, desen Beschaltung der Typical Application entspricht. Im Eingangskreis befindet sich zunächst eine SMD-Sicherung R502 und eine Clamping-Diode D501. Zwischen Batterie und Boost-Converter befindet sich ein P-Kanal MOSFET Q501, der während der Lagerung durch den Pullup-Widerstand R501 geschlossen ist. Q501 kann durch eine hartverdahtete Logik (s.u.) geöffnet oder wieder geschlossen werden, um die Sonde ein- oder auszuschalten.
 
-##LDOs
+## LDOs
 Es werden [TVS70030](http://www.ti.com/lit/ds/symlink/tlv700-q1.pdf) von TI eingesetzt. U501 erzeugt die Spannung für den Mikrocontroller (MCU), U503 für das Mess-Frontend und U504 für das GPS-Modul. Pin 4 der LDOs, der Laut Datenblatt NC ist, ist gegen Masse entkoppelt, vermutlich damit auch ansonsten pinkompatible Versionen wie der [MAX997](https://datasheets.maximintegrated.com/en/ds/MAX8887-MAX8888.pdf) eingesetzt werden können.
 
-##Hartverdrahtete Logik
+## Hartverdrahtete Logik
 Der oben besprochene P-Kanal MOSFET Q501 wird durch einen N-Kanal MOSFET Q502 gesteuert. 
 * Die Sonde ist eingeschaltet, wenn dieser Transistor geschlossen ist, sein Gate also HIGH.
 * Die Sonde ist ausgeschaltet, wenn dieser Transistor offen ist, sein Gate also LOW.
