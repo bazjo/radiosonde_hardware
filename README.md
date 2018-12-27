@@ -12,6 +12,7 @@ Die Untersuchung der RPM411 Tochterplatine mit barometrischem Sensor ist im sepa
 * Unbekannte Verbindungen finden
 * Werte der passiven Bauteile identifizieren
 * Herausfinden, welche der im Schaltpaln eingetragen Widerstände in Wahrheit ESD-Surpressor etc. sind.
+* Vermessung des Frontends im Klimaschrank
 * Detaillierte Beschreibung des SPI-Busses
 * Detaillierte Beschreibung des UART zwischen GPS und MCU
 * funktionale Untersuchung NFC-Interface
@@ -65,4 +66,19 @@ Letztlich kann auch die Batteriespannung selbst über den Spannungsteiler `R508`
 
 Der Mikrocontroller ist ein [STM32F100C8](https://www.st.com/resource/en/datasheet/stm32f100c8.pdf) `U101` von ST im LQFP48-Gehäuse, der seinen Takt vom  24 MHz-Quarz `X101` erhält. Außer der Tatsache, dass alle IO-Pins belegt sind, ist nur erwähnenswert, dass an vielen Ausgängen RC-Tiefpassfilter vorhanden sind.
 
+# Mess-Frontend
+![Mess-Frontend](__used_img__/frontend_sch.png?raw=true "Mess-Frontend")
+
+Mechanisch besteht das Frontend aus dem Messfühler, der aus Flex-PCB-Material besteht, welches mit silberner Farbe verdeckt ist und mit einem 20-Pin-FPC-Steckverbinder mit dem Board verbunden ist. Der Messfühler beinhaltet zum einen einen PT1000-Thermofühler, der diskret als Draht ausgeführt ist (der charakteristische 'Haken') und zum anderen aus einem Keramik-Hybridmodul, welches der Messung der Luftfeuchtigkeit dient. Es vereinigt drei Funktionen
+* Messung der Luftfeuchtigkeit über ein kapazitives Hygrometer (Dielektrizitätskonstante des hydrophilen Dielektrikums verändert sich und damit die Kapazität des Kondensators über den Messbereich.
+* Messung der Temperatur des Moduls mittels PT1000 als Rückführgröße für die Regelung der Modulbeheizung.
+* Modulbehizung über einen Dickschichtwidestand. Während des Fluges wird das Modul 5 K über Umgebungstemeperatur gehalten, um Kondesation zu verhindern. Beim Preflight-Check wird es aufgeheizt, um Verunreinigungen zu entfernen und eine Zero-Humidity-Plausibiltätsprüfung durchzuführen. Es findet keine On-Site Kalibrierung im Ground Check Device für Temperatur und Feuchtigkeit statt.
+
+Weiterhin sind auf einem durch gefräste Slots vom Rest der Leiterplatte abgegrenzten Bereich zwei Referenzwiderstände R208 und R209, ein Refernzkondensator C209, fünf Heizwiderstände R201-205 und die zur Ansteuerung dieser benötigten MOSFETs Q203-Q204, sowie ein unidentifiziertes Bauteil R209 vorhanden, bei dem es sich um einen Thermistor handeln könnte. Es konnte bei Tests mit Zimmertemperatur kein Heizen der Referenzen beobachtet werden.
+
+ELektrisch gesehen besteht das Frontend aus zwei Ringoszillatoren für Temperatur bzw. Luftfeuchtigkeit, deren Frequenz durch mithilfe von Analogschaltern in den Rückkopplungspfad eingefügten Impedanzen variiert wird.
+
+Jeweils ein Ringoszillator wird durch 3/6 eines [74HCU04]() Hex Inverters U205 gebildet. Es sind jeweils drei Inverter hintereinandergeschaltet. Der jeweils erste und dritte Inverter sind direkt über ein RC-Reihenglied C207/R210, R214/C215, C208/R211, R215/C216 rückgekoppelt, der gesamte Ringoszillator über einen Kondensator C212, C213. Beide Ringoszillatoren können durch einen P-Kanal-MOSFET Q201, Q202 am ersten Inverter mit jeweils separater Anteuerung auf +3 V gezogen werden, was Masse am Ausgang entspricht, um sie zu deaktivieren. Weiterhin am Eingang der Inverter verortet sind die Heizwiderstände für die Referenz, die durch schließen von Q203, Q204 bei geschlossenen P-Kanal-MOSFETs Q201, Q202 aktiviert werden können.
+
+Der Rückkopplungspfad für die Temperaturmessung besteht aus einer Hintereinanderschaltung von 2/3 Buffern eines [74LVC3G34]() U207 und zwei Widerständen R219 und R223, die vermutlich der Feinabstimmung der Resonanzfrequenz dienen. Daran schließen sich vier Single-Pole-Single-Throw(SPST)-Schalter [TS3A4751]() U201 an, deren NO mit dem Ausgang des Buffers verbunden ist, und die jeweils einen der vier möglichen Messwiderstände in die Rückkoppelschleife schalten. Der Messabgriff besfindet sich zwischen Buffer und Schalter mit einem Reihenwiderstand R224.
 
