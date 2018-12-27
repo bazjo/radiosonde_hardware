@@ -8,6 +8,8 @@ Der blockweise Aufbau der RS41 soll im nachfolgenden beschrieben werden. Bereitg
 Die Untersuchung der RPM411 Tochterplatine mit barometrischem Sensor ist im separaten Unterordner zu finden.
 
 # ToDo
+* Unidentifizierte Komponenten identifizieren
+* Unbekannte Verbindungen finden
 * Werte der passiven Bauteile identifizieren
 * Herausfinden, welche der im Schaltpaln eingetragen Widerstände in Wahrheit ESD-Surpressor etc. sind.
 * Detaillierte Beschreibung des SPI-Busses
@@ -25,6 +27,8 @@ Die Sonde ist in sechs funktionale Baugruppen zu unterteilen, die auf dem nachfo
 * GPS
 * Radio
 * Interface
+
+Das Reverse-Engineering wird dadurch erschwert, dass die Platine vierlagig ist.
 
 # Stromversorgung
 ![Power Supply](__used_img__/supply_sch.png?raw=true "Power Supply")
@@ -58,3 +62,7 @@ Letztlich kann auch die Batteriespannung selbst über den Spannungsteiler R508 u
 
 # Mikrocontroller
 ![Microcontroller](__used_img__/mcu_sch.png?raw=true "Microcontroller")
+
+Der Mikrocontroller ist ein [STM32F100C8](https://www.st.com/resource/en/datasheet/stm32f100c8.pdf) U101 von ST im LQFP48-Gehäuse, der seinen Takt vom  24 MHz-Quarz X101 erhält. Außer der Tatsache, dass alle IO-Pins belegt sind, ist nur erwähnenswert, dass an vielen Ausgängen RC-Tiefpassfilter vorhanden sind.
+
+
