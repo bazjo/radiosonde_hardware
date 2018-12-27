@@ -46,23 +46,23 @@ Als Boost-Converter kommt ein [TPS61200](http://www.ti.com/lit/ds/symlink/tps612
 Es werden [TVS70030](http://www.ti.com/lit/ds/symlink/tlv700-q1.pdf) von TI eingesetzt. `U501` erzeugt die Spannung für den Mikrocontroller (MCU), `U503` für das Mess-Frontend und `U504` für das GPS-Modul. Pin 4 der LDOs, der Laut Datenblatt NC ist, ist gegen Masse entkoppelt, vermutlich damit auch ansonsten pinkompatible Versionen wie der [MAX8887](https://datasheets.maximintegrated.com/en/ds/MAX8887-MAX8888.pdf) eingesetzt werden können.
 
 ## Hartverdrahtete Logik
-Der oben besprochene P-Kanal MOSFET Q501 wird durch einen N-Kanal MOSFET Q502 gesteuert. 
+Der oben besprochene P-Kanal MOSFET Q501 wird durch einen N-Kanal MOSFET `Q502` gesteuert. 
 * Die Sonde ist eingeschaltet, wenn dieser Transistor geschlossen ist, sein Gate also HIGH.
 * Die Sonde ist ausgeschaltet, wenn dieser Transistor offen ist, sein Gate also LOW.
 
-Über R506 und D502 gelangt ein einweg-gleichgerichtetes Signal der NFC-Spule auf das Gate. Hierdurch kann die Sonde über NFC eingeschaltet werden. Weiterhin wird diese Signal auch zur Kommunikation mit dem RI41 Groundcheck Device über den Spannungsteiler aus R510 und R514/C525 zum MCU geführt.
+Über `R506` und `D502` gelangt ein einweg-gleichgerichtetes Signal der NFC-Spule auf das Gate. Hierdurch kann die Sonde über NFC eingeschaltet werden. Weiterhin wird diese Signal auch zur Kommunikation mit dem RI41 Groundcheck Device über den Spannungsteiler aus `R510` und `R514`/`C525` zum MCU geführt.
 
-Ist die Sonde einmal eingeschaltet, wird sie über die geschaltete Batteriespannung, die über R505 an das Gate geführt wird, in diesem Zustand gehalten.
+Ist die Sonde einmal eingeschaltet, wird sie über die geschaltete Batteriespannung, die über `R505` an das Gate geführt wird, in diesem Zustand gehalten.
 
-Um sie wieder auszuschalten, kann der MCU den N-Kanal MOSFET Q503 schließen, was das Gate von Q502 auf LOW bringt.
+Um sie wieder auszuschalten, kann der MCU den N-Kanal MOSFET `Q503` schließen, was das Gate von `Q502` auf LOW bringt.
 
-Der Taster an der Unterseite der Sonde S501 schaltet das Gate von Q502 ebenfalls über R507 auf HIGH. Damit der Mikrocontroller auch den Zustand des Tasters abfragen kann, ist die Gatespannung von Q502 über den Spannungsteiler R506 und R512/C524 an einen ADC-Eingang des MCU geführt werden. Ausgewerter wird hier der geringere Spannungsabfall über R507, der zu einer höheren Gatepannung führt, wenn dieser gedrückt ist.
+Der Taster an der Unterseite der Sonde `S501` schaltet das Gate von `Q502` ebenfalls über `R507` auf HIGH. Damit der Mikrocontroller auch den Zustand des Tasters abfragen kann, ist die Gatespannung von `Q502` über den Spannungsteiler `R506` und `R512`/`C524` an einen ADC-Eingang des MCU geführt werden. Ausgewerter wird hier der geringere Spannungsabfall über `R507`, der zu einer höheren Gatepannung führt, wenn dieser gedrückt ist.
 
-Letztlich kann auch die Batteriespannung selbst über den Spannungsteiler R508 und R512/C524 ausgewertet werden.
+Letztlich kann auch die Batteriespannung selbst über den Spannungsteiler `R508` und `R512`/`C524` ausgewertet werden.
 
 # Mikrocontroller
 ![Microcontroller](__used_img__/mcu_sch.png?raw=true "Microcontroller")
 
-Der Mikrocontroller ist ein [STM32F100C8](https://www.st.com/resource/en/datasheet/stm32f100c8.pdf) U101 von ST im LQFP48-Gehäuse, der seinen Takt vom  24 MHz-Quarz X101 erhält. Außer der Tatsache, dass alle IO-Pins belegt sind, ist nur erwähnenswert, dass an vielen Ausgängen RC-Tiefpassfilter vorhanden sind.
+Der Mikrocontroller ist ein [STM32F100C8](https://www.st.com/resource/en/datasheet/stm32f100c8.pdf) `U101` von ST im LQFP48-Gehäuse, der seinen Takt vom  24 MHz-Quarz `X101` erhält. Außer der Tatsache, dass alle IO-Pins belegt sind, ist nur erwähnenswert, dass an vielen Ausgängen RC-Tiefpassfilter vorhanden sind.
 
 
