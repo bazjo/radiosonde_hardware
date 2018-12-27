@@ -27,6 +27,8 @@ Die Sonde ist in sechs funktionale Baugruppen zu unterteilen, die auf dem nachfo
 * Interface
 
 # Stromversorgung
+![Power Supply](__used_img__/supply_sch.png?raw=true "Power Supply")
+
 Die Stromversorgung lässt sich in drei Teile einteilen
 
 * ein Boost-Converter erzeugt 3,8 V Spannung aus der variablen Batteriespannung
