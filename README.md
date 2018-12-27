@@ -40,10 +40,10 @@ Die Stromversorgung lässt sich in drei Teile einteilen
 * eine hartverdrahtete Logik ermittelt den Betriebszustand des Boostconverters und damit der Sonde
 
 ## Boost-Converter
-Als Boost-Converter kommt ein [TPS61200](http://www.ti.com/lit/ds/symlink/tps61200.pdf) U502 von TI zum Einsatz, desen Beschaltung der Typical Application entspricht. Im Eingangskreis befindet sich zunächst eine SMD-Sicherung R502 und eine Clamping-Diode D501. Zwischen Batterie und Boost-Converter befindet sich ein P-Kanal MOSFET Q501, der während der Lagerung durch den Pullup-Widerstand R501 geschlossen ist. Q501 kann durch eine hartverdahtete Logik (s.u.) geöffnet oder wieder geschlossen werden, um die Sonde ein- oder auszuschalten.
+Als Boost-Converter kommt ein [TPS61200](http://www.ti.com/lit/ds/symlink/tps61200.pdf) `U502` von TI zum Einsatz, desen Beschaltung der Typical Application entspricht. Im Eingangskreis befindet sich zunächst eine SMD-Sicherung `R502` und eine Clamping-Diode `D501`. Zwischen Batterie und Boost-Converter befindet sich ein P-Kanal MOSFET `Q501`, der während der Lagerung durch den Pullup-Widerstand `R501` geschlossen ist. `Q501` kann durch eine hartverdahtete Logik (s.u.) geöffnet oder wieder geschlossen werden, um die Sonde ein- oder auszuschalten.
 
 ## LDOs
-Es werden [TVS70030](http://www.ti.com/lit/ds/symlink/tlv700-q1.pdf) von TI eingesetzt. U501 erzeugt die Spannung für den Mikrocontroller (MCU), U503 für das Mess-Frontend und U504 für das GPS-Modul. Pin 4 der LDOs, der Laut Datenblatt NC ist, ist gegen Masse entkoppelt, vermutlich damit auch ansonsten pinkompatible Versionen wie der [MAX8887](https://datasheets.maximintegrated.com/en/ds/MAX8887-MAX8888.pdf) eingesetzt werden können.
+Es werden [TVS70030](http://www.ti.com/lit/ds/symlink/tlv700-q1.pdf) von TI eingesetzt. `U501` erzeugt die Spannung für den Mikrocontroller (MCU), `U503` für das Mess-Frontend und `U504` für das GPS-Modul. Pin 4 der LDOs, der Laut Datenblatt NC ist, ist gegen Masse entkoppelt, vermutlich damit auch ansonsten pinkompatible Versionen wie der [MAX8887](https://datasheets.maximintegrated.com/en/ds/MAX8887-MAX8888.pdf) eingesetzt werden können.
 
 ## Hartverdrahtete Logik
 Der oben besprochene P-Kanal MOSFET Q501 wird durch einen N-Kanal MOSFET Q502 gesteuert. 
