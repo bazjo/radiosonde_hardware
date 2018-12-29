@@ -5,7 +5,7 @@ Für weitere Informationen über die RS41 [meine Website](https://example.com).
 
 Der blockweise Aufbau der RS41 soll im nachfolgenden beschrieben werden. Bereitgestellt wird weiterhin der Schaltplan im Eagle-Format, Logic-Analyzer-Aufzeichnungen der funktionalen Blöcke und hochauflösende Scans der Leiterplatten.
 
-Die Untersuchung der RPM411 Tochterplatine mit barometrischem Sensor ist im separaten Unterordner zu finden.
+Die Untersuchung der RPM411 Tochterplatine mit barometrischem Sensor und des OIF411 Ozone Interfaces sind in den separaten Unterordnern zu finden.
 
 Pull Requests mit Verbesserungen, Übersetzungen und Fehlerkorrekturen sind gerne gesehen!
 
@@ -24,7 +24,7 @@ Pull Requests mit Verbesserungen, Übersetzungen und Fehlerkorrekturen sind gern
 # Einleitung
 Die Sonde ist in sechs funktionale Baugruppen zu unterteilen, die auf dem nachfolgengen Bild hervorgehoben sind.
 
-* Stromversorgung
+* [Stromversorgung](# Stromversorgung)
 * Mikrocontroller
 * Mess-Frontend
 * GPS
@@ -167,3 +167,12 @@ Die empfangenen Daten werden in der Sonde differenziell empfangen. Parallel zur 
 Der andere Anschluss wird mit `D603` erneut gegen Masse geclamped und über `R603` wird das einweggleichgerichtete Signal DC-mäßig an Masse gekoppelt, sowie mit `C602` AC-gekoppelt. `R601` und `R604` biasen diese AC-Kopplung, bevor das Signal durch einen RC Tiefpass `R602`/`C603` gefiltert und mit `D601` gegen die Versorgungsspannung des MCU geclamped wird.
 
 Die Modulation des Lastwiderstandes wird mithilfe eines Abgriffs vor der Doppeldiode zur Spannungsversorgung vorgenommen, an dem ein Anschluss der Spule über `R605` und den N-Channel-MOSFET `Q601` an Masse gekoppelt werden kann. Damit kann für eine Hälfte des Wechselspannungssignal ein Strompfad über `R605`, `Q601` und `R603` hergestellt werden.
+
+# Last but not least
+Einig Projektideen, was man mit dem gewonnenen Wissen anstellen kann
+
+* AFu-Firmware um eine eigene NFC-Schnittstelle und Nutzung der vorhandenen Sensoren erweitern
+* alternative Firmware für Radiosonden-Nutzung im 400 MHz Band
+* Verwendung als IoT Wohnraumsensoren im 433 MHz ISM-Band
+* Verwendung als LoRaWAN-Nodes im 433 MHz ISM-Band
+* Entwicklung eigener Mezzanine-Boards für platzsparende Messerweiterungen, denkbar wäre ein Strahlungssensor
