@@ -29,7 +29,7 @@ Die Sonde ist in sechs funktionale Baugruppen zu unterteilen, die auf dem nachfo
 * [Mess-Frontend](#mess-frontend)
 * [GPS](#gps)
 * [Radio](#radio)
-* [Interface](#intercace)
+* [Interface](#interface)
 
 Das Reverse-Engineering wird dadurch erschwert, dass die Platine vierlagig ist.
 
