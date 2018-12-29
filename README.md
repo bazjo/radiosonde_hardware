@@ -75,7 +75,7 @@ Der Mikrocontroller ist ein [STM32F100C8](https://www.st.com/resource/en/datashe
 Mechanisch besteht das Frontend aus dem Messfühler, der aus Flex-PCB-Material besteht, welches mit silberner Farbe verdeckt ist und mit einem 20-Pin-FPC-Steckverbinder mit dem Board verbunden ist. Der Messfühler beinhaltet zum einen einen PT1000-Thermofühler, der diskret als Draht ausgeführt ist (der charakteristische 'Haken') und zum anderen aus einem Keramik-Hybridmodul, welches der Messung der Luftfeuchtigkeit dient. Es vereinigt drei Funktionen
 * Messung der Luftfeuchtigkeit über ein kapazitives Hygrometer (Dielektrizitätskonstante des hydrophilen Dielektrikums verändert sich und damit die Kapazität des Kondensators über den Messbereich.
 * Messung der Temperatur des Moduls mittels PT1000 als Rückführgröße für die Regelung der Modulbeheizung.
-* Modulbehizung über einen Dickschichtwidestand. Während des Fluges wird das Modul 5 K über Umgebungstemeperatur gehalten, um Kondesation zu verhindern. Beim Preflight-Check wird es aufgeheizt, um Verunreinigungen zu entfernen und eine Zero-Humidity-Plausibiltätsprüfung durchzuführen. Es findet keine On-Site Kalibrierung im Ground Check Device für Temperatur und Feuchtigkeit statt.
+* Modulbehizung über einen Dickschichtwidestand. Während des Fluges wird das Modul 5 K über Umgebungstemeperatur gehalten, um Kondesation zu verhindern. Beim Preflight-Check wird es aufgeheizt, um Verunreinigungen zu entfernen und eine Zero-Humidity-Abgleich durchzuführen. Es findet keine on-site Kalibrierung im Ground Check Device für Temperatur statt.
 
 Weiterhin sind auf einem durch gefräste Slots vom Rest der Leiterplatte abgegrenzten Bereich zwei Referenzwiderstände `R208` und `R209`, ein Refernzkondensator `C209`, fünf Heizwiderstände `R201-205` und die zur Ansteuerung dieser benötigten MOSFETs `Q203-204,` sowie ein unidentifiziertes Bauteil `R209` vorhanden, bei dem es sich um einen Thermistor handeln könnte. Es konnte bei Tests mit Zimmertemperatur kein Heizen der Referenzen beobachtet werden.
 
@@ -86,7 +86,7 @@ Jeweils ein Ringoszillator wird durch 3/6 eines [74HCU04](https://assets.nexperi
 
 Der Rückkopplungspfad für die Temperaturmessung besteht aus einer Hintereinanderschaltung von 2/3 Buffern eines [74LVC3G34](https://assets.nexperia.com/documents/data-sheet/74LVC3G34.pdf) `U207` und zwei Widerständen `R219` und `R223`, die vermutlich der Feinabstimmung der Resonanzfrequenz dienen. Daran schließen sich vier Single-Pole-Single-Throw(SPST)-Schalter [TS3A4751](http://www.ti.com/lit/ds/symlink/ts3a4751.pdf) `U201` an, deren NO mit dem Ausgang des Buffers verbunden ist, und die jeweils einen der vier möglichen Messwiderstände in die Rückkoppelschleife schalten. Der Messabgriff besfindet sich zwischen Buffer und Schalter mit einem Reihenwiderstand `R224`.
 
-Im Rückkopplungspfad der Feuchtigkeitsmessung befindet sich eine Schaltung aus dem verbleibenden Buffer und zwei Widerständen `R226` und R220, Der Messabgriff erfolgt genau wie bei der Temperaturmessung durch einen Widerstand `R225`. Weitrhin im Rückkopplungspfad befinden sich drei SPDT-Schalter [TS5A9411](http://www.ti.com/lit/ds/symlink/ts5a9411.pdf) `U202-204`, die den Mess- und Refernzkondensator entweder in das Rückkopplungsnetzwerk, oder gegen Masse schalten. U205 weist zwischen COM und dem Eingang des ersten Buffers, wo sich normalerweise ein Referenzkondensator befinden sollte, keine Verbindung auf, sodass dieser Schalter keinen offensichtlichen Zweck erfüllt. Da er aber wie die anderen beiden auch in Software angesteuert wird, kann vermutet werden, dass die Schalter eine exemplarunabhängige nichtlineare Wirkung auf die Rückkopplungsfrequenz aufweisen, die an mit diesem Schalter gemessen wird, um sie zu kompensieren. Parallel zu den Schaltern wird fix mit dem Widerstand `R212` rückgekoppelt.
+Im Rückkopplungspfad der Feuchtigkeitsmessung befindet sich eine Schaltung aus dem verbleibenden Buffer und zwei Widerständen `R226` und R220, Der Messabgriff erfolgt genau wie bei der Temperaturmessung durch einen Widerstand `R225`. Weiterhin im Rückkopplungspfad befinden sich drei SPDT-Schalter [TS5A9411](http://www.ti.com/lit/ds/symlink/ts5a9411.pdf) `U202-204`, die den Mess- und Refernzkondensator entweder in das Rückkopplungsnetzwerk, oder gegen Masse schalten. U205 weist zwischen COM und dem Eingang des ersten Buffers, wo sich normalerweise ein Referenzkondensator befinden sollte, keine Verbindung auf, sodass dieser Schalter keinen offensichtlichen Zweck erfüllt. Da er aber wie die anderen beiden auch in Software angesteuert wird, kann vermutet werden, dass die Schalter eine exemplarunabhängige nichtlineare Wirkung auf die Rückkopplungsfrequenz aufweisen, die an mit diesem Schalter gemessen wird, um sie zu kompensieren. Parallel zu den Schaltern wird fix mit dem Widerstand `R212` rückgekoppelt.
 
 Die beiden Messausgänge werden in einem NOR-Gatter `U208` umgesetzt und das Ergebnis an den MCU geführt, sodass immer nur eine Messung durchgeführt werden kann. Messungen mit dem Logic Analyzer zeigen, dass die Temperatur zwei Mal pro Sekunde und die Feuchtigkeit ein Mal pro Sekunde gemessen wird.
 
@@ -97,7 +97,7 @@ Die Beheizung des Feuchtigkeitssensors wird über ein unidentifiziertes Bauteil 
 # GPS
 ![GPS](__used_asset__/gps_sch.png?raw=true "GPS")
 
-Das GPS-Modul [UBX-6010](__used_asset__/gps_datasheet.pdf?raw=true) `U302` ist über einen UART an den MCU angebunden. Die Beschaltung entspricht bis auf den diskreten SAW-Filter und LNA im wesentlichen der Typical Application
+Das GPS-Modul [UBX-6010](__used_asset__/gps_datasheet.pdf?raw=true) `U302` ist über einen UART an den MCU angebunden. Die Beschaltung entspricht bis auf den diskreten SAW-Filter und LNA im wesentlichen der Typical Application.
 
 # Radio
 ![Radio](__used_asset__/radio_sch.png?raw=true "Radio")
@@ -109,3 +109,61 @@ Von den drei GPIO-Pins werden zwei verwendet. GPIO1 schaltet die N-Kanal-MOSFETS
 # Interface
 ![Interface](__used_asset__/interface_sch.png?raw=true "Interface")
 
+Es werden folgende Schnittstellen bereitgestellt
+* EEPROM für die SGM-Version
+* XDATA- und Programmiersteckverbinder
+* interner Erweiterungssteckverbinder
+* NFC-Interface
+
+## EEPROM
+Auf der Rückseite der Platine befindet sich ein Footprint für ein SPI-EEPROM `U601` mit generischem Pinout, welches den SPI-Bus mit Radio und internem Erweiterungssteckverbinder teilt. Dieser wird höchstwarscheinlich dazu verwendet, den Radio Silence Mode in der militärischen Version RS41-SGM zu implementieren, bisher ist aber kein solcher Sondenfund bekannt, um diese Hypothese zu bestätigen. Im Radio Silence Mode speichert die Sonde die Messwerte des Aufstiegs bis zu einer bestimmten Höhe oder Zeit, um sie die danach alternierend mit den aktuellen Frames zur Bodenstation zu senden. Da der interne Speicher des verwendenten MCUs, selbst in einer Konfiguration mit mehr Speicher, nicht für diesen Zweck ausreicht, scheint die Verwendung eines EEPROM für diesen Zweck sinnvoll.
+
+## XDATA und Programmiersteckverbinder
+Auf dem 2x5 2 mm Pinheader `J602` an der Unterkante der Sonde sind herausgeführt
+ * XDATA als UART; die Pins sind nicht konform zum XDATA-Standard auch als I2C konfigurierbar
+ * SWD-Interface zum Flashen des MCU
+ * Reset-Pin des MCU
+ * Batteriespannung, Boostspannung 3,8 V und MCU-Spannung 3 V
+ 
+ ```
+                  -------
+            GND  | o   o |  XDATA_RX(PB11)
+                 |       |
+ XDATA_TX(PB10)  | o   o |  +3V_MCU
+                -        |
+        V_Boost|   o   o |  VBAT
+                -        |
+        MCU_RST  | o   o |  SWCLK(PA14)
+                 |       |
+    SWDIO(PA13)  | o   o |  GND
+                  -------
+```
+
+Es ist also möglich, den Mikrocontroller extern zu versorgen, was das Power Cycling für den Angriff auf die Verschlüsselung des Flashspichers u.U. vereinfacht.
+
+## Interner Erweiterungssteckverbinder
+Der interne Erweiterungssteckverbinder `J601` führt den geteilten SPI-Bus sowie zwei CS-Signale, von denen eines mit dem EEPROM geteilt ist, sowie die Boostspannung 3,8 V und MCU-Spannung 3 V heraus. Es sind unbelegte Pins vorhanden, die z.B. zum Programmieren des Mezzanine-Boards genutzt werden können.
+
+Als einziges Mezzanine-Board, welches diesen Anschluss nutzt, ist das RPM411 barometrische Druckmodul bekannt.
+
+Der Typ des Steckverbinders ist unbekannt und nicht trivial auffindbar. Die Daten sind
+* 2x8 polig
+* 0,5 mm Rastermaß
+* 2 mm Stacking Height
+* Male und Female weisen Arretierungsstifte auf, die Löcher im Footprint erfordern.
+* Der Steckverbinder ist mechanisch stabil, es existiert keine weitere mecanische Verbindung zwischen den beiden Platinen
+
+Es wäre wünschenswert, den Steckverbindertypen für eigene Entwicklungen herauszufinden. Die "Tough Contact" P5KF Steckverbinder von Panasonic Electric Works könnten auf den ersten Blick kompatibel sein.
+
+## NFC-Interface
+Über das NFC-Interface kann die Sonde eingeschaltet und parametriert werden. Die Auswertung erfolgt diskret im Mikrocontroller, da es kein integriertes NFC-Frontend gibt, welches diese "Wakeup"-Funktionalität bereitstellt. 
+
+NFC basiert im Wesentlichen auf zwei Mechanismen zum Senden und Empfangen von Daten
+* Wenn das Groundcheck Device Daten an die Sonde schickt, pulst sie den 13,56 MHz Träger entsprechend der Daten
+* Wenn die Sonde Daten an das Groundcheck Device schickt, moduliert sie die Last, die sie aus dem Feld der Sendeantenne zieht entsprechend der Daten.
+
+Die empfangenen Daten werden in der Sonde differenziell empfangen. Parallel zur Empfangsspule befinden sich zwei Kondensatoren  `C604` und `C605`, anschließend werden die beiden Anschlüsse in jeweils einer Doppeldiode `D602/D607` gegen Masse geclamped und einweggleichgerichtet. Ein Anschluss wird an die oben besprochenene Schaltung der Spannungsversogrung geführt.
+
+Der andere Anschluss wird mit `D603` erneut gegen Masse geclamped und über `R603` wird das einweggleichgerichtete Signal DC-mäßig an Masse gekoppelt, sowie mit `C602` AC-gekoppelt. `R601` und `R604` biasen diese AC-Kopplung, bevor das Signal durch einen RC Tiefpass `R602`/`C603` gefiltert und mit `D601` gegen die Versorgungsspannung des MCU geclamped wird.
+
+Die Modulation des Lastwiderstandes wird mithilfe eines Abgriffs vor der Doppeldiode zur Spannungsversorgung vorgenommen, an dem ein Anschluss der Spule über `R605` und den N-Channel-MOSFET `Q601` an Masse gekoppelt werden kann. Damit kann für eine Hälfte des Wechselspannungssignal ein Strompfad über `R605`, `Q601` und `R603` hergestellt werden.
