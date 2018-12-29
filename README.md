@@ -24,7 +24,7 @@ Pull Requests mit Verbesserungen, Übersetzungen und Fehlerkorrekturen sind gern
 # Einleitung
 Die Sonde ist in sechs funktionale Baugruppen zu unterteilen, die auf dem nachfolgengen Bild hervorgehoben sind.
 
-* [Stromversorgung](# Stromversorgung)
+* [Stromversorgung](#stromversorgung)
 * Mikrocontroller
 * Mess-Frontend
 * GPS
