@@ -25,11 +25,11 @@ Pull Requests mit Verbesserungen, Übersetzungen und Fehlerkorrekturen sind gern
 Die Sonde ist in sechs funktionale Baugruppen zu unterteilen, die auf dem nachfolgengen Bild hervorgehoben sind.
 
 * [Stromversorgung](#stromversorgung)
-* Mikrocontroller
-* Mess-Frontend
-* GPS
-* Radio
-* Interface
+* [Mikrocontroller](#mikrocontroller)
+* [Mess-Frontend](#mess-frontend)
+* [GPS](#gps)
+* [Radio](#radio)
+* [Interface](#intercace)
 
 Das Reverse-Engineering wird dadurch erschwert, dass die Platine vierlagig ist.
 
