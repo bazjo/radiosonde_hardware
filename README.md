@@ -13,7 +13,7 @@ Pull Requests mit Verbesserungen, Übersetzungen und Fehlerkorrekturen sind gern
 * Unidentifizierte Komponenten identifizieren
 * Unbekannte Verbindungen finden
 * Werte der passiven Bauteile identifizieren
-* Herausfinden, welche der im Schaltpaln eingetragen Widerstände in Wahrheit ESD-Surpressor etc. sind.
+* Herausfinden, welche der im Schaltplan eingetragen Widerstände in Wahrheit ESD-Surpressor etc. sind.
 * Vermessung des Frontends im Klimaschrank
 * Detaillierte Beschreibung des SPI-Busses
 * Detaillierte Beschreibung des UART zwischen GPS und MCU
