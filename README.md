@@ -5,7 +5,7 @@ Für weitere Informationen über die RS41 [meine Website](https://example.com).
 
 Der blockweise Aufbau der RS41 soll im nachfolgenden beschrieben werden. Bereitgestellt wird weiterhin der Schaltplan im Eagle-Format, Logic-Analyzer-Aufzeichnungen der funktionalen Blöcke und hochauflösende Scans der Leiterplatten.
 
-Die Untersuchung der RPM411 Tochterplatine mit barometrischem Sensor und des OIF411 Ozone Interfaces sind in den separaten Unterordnern zu finden.
+Die Untersuchung der RPM411 Tochterplatine mit barometrischem Sensor und des OIF411 Ozone Interfaces sind, sobald verfügbar, in den separaten Unterordnern zu finden.
 
 Pull Requests mit Verbesserungen, Übersetzungen und Fehlerkorrekturen sind gerne gesehen!
 
@@ -53,7 +53,7 @@ Der oben besprochene P-Kanal MOSFET Q501 wird durch einen N-Kanal MOSFET `Q502` 
 * Die Sonde ist eingeschaltet, wenn dieser Transistor geschlossen ist, sein Gate also HIGH.
 * Die Sonde ist ausgeschaltet, wenn dieser Transistor offen ist, sein Gate also LOW.
 
-Über `R506` und `D502` gelangt ein einweg-gleichgerichtetes Signal der NFC-Spule auf das Gate. Hierdurch kann die Sonde über NFC eingeschaltet werden. Weiterhin wird diese Signal auch zur Kommunikation mit dem RI41 Groundcheck Device über den Spannungsteiler aus `R510` und `R514`/`C525` zum MCU geführt.
+Über `R506` und `D502` gelangt ein einweg-gleichgerichtetes Signal der NFC-Spule auf das Gate. Hierdurch kann die Sonde über NFC eingeschaltet werden. Weiterhin wird dieses Signal auch zur Kommunikation mit dem RI41 Groundcheck Device über den Spannungsteiler aus `R510` und `R514`/`C525` zum MCU geführt.
 
 Ist die Sonde einmal eingeschaltet, wird sie über die geschaltete Batteriespannung, die über `R505` an das Gate geführt wird, in diesem Zustand gehalten.
 
@@ -72,7 +72,7 @@ Der Mikrocontroller ist ein [STM32F100C8](https://www.st.com/resource/en/datashe
 ![Mess-Frontend](__used_asset__/frontend_sch.png?raw=true "Mess-Frontend")
 
 ## Schaltungsanordnung
-Mechanisch besteht das Frontend aus dem Messfühler, der aus Flex-PCB-Material besteht, welches mit silberner Farbe verdeckt ist und mit einem 20-Pin-FPC-Steckverbinder mit dem Board verbunden ist. Der Messfühler beinhaltet zum einen einen PT1000-Thermofühler, der diskret als Draht ausgeführt ist (der charakteristische 'Haken') und zum anderen aus einem Keramik-Hybridmodul, welches der Messung der Luftfeuchtigkeit dient. Es vereinigt drei Funktionen
+Mechanisch besteht das Frontend zum einen aus dem Messfühler, welcher aus Flex-PCB-Material besteht, dass mit silberner Farbe verdeckt ist und mit einem 20-Pin-FPC-Steckverbinder mit dem Board verbunden ist. Der Messfühler beinhaltet zum einen einen PT1000-Thermofühler, der diskret als Draht ausgeführt ist (der charakteristische 'Haken') und zum anderen aus einem Keramik-Hybridmodul, welches der Messung der Luftfeuchtigkeit dient. Es vereinigt drei Funktionen
 * Messung der Luftfeuchtigkeit über ein kapazitives Hygrometer (Dielektrizitätskonstante des hydrophilen Dielektrikums verändert sich und damit die Kapazität des Kondensators über den Messbereich.
 * Messung der Temperatur des Moduls mittels PT1000 als Rückführgröße für die Regelung der Modulbeheizung.
 * Modulbehizung über einen Dickschichtwidestand. Während des Fluges wird das Modul 5 K über Umgebungstemeperatur gehalten, um Kondesation zu verhindern. Beim Preflight-Check wird es aufgeheizt, um Verunreinigungen zu entfernen und eine Zero-Humidity-Abgleich durchzuführen. Es findet keine on-site Kalibrierung im Ground Check Device für Temperatur statt.
@@ -82,11 +82,11 @@ Weiterhin sind auf einem durch gefräste Slots vom Rest der Leiterplatte abgegre
 ## Schaltungstopologie
 ELektrisch gesehen besteht das Frontend aus zwei Ringoszillatoren für Temperatur bzw. Luftfeuchtigkeit, deren Frequenz durch mithilfe von Analogschaltern in den Rückkopplungspfad eingefügten Impedanzen variiert wird.
 
-Jeweils ein Ringoszillator wird durch 3/6 eines [74HCU04](https://assets.nexperia.com/documents/data-sheet/74HCU04.pdf) Hex Inverters `U205` gebildet. Es sind jeweils drei Inverter hintereinandergeschaltet. Der jeweils erste und dritte Inverter sind direkt über ein RC-Reihenglied `C207`/`R210`, `R214`/`C215`, `C208`/`R211`, `R215`/`C216` rückgekoppelt, der gesamte Ringoszillator über einen Kondensator `C212`, `C213`. Beide Ringoszillatoren können durch einen P-Kanal-MOSFET `Q201`, `Q202` am ersten Inverter mit jeweils separater Anteuerung auf +3 V gezogen werden, was Masse am Ausgang entspricht, um sie zu deaktivieren. Weiterhin am Eingang der Inverter verortet sind die Heizwiderstände für die Referenz, die durch schließen von `Q203`, `Q204` bei geschlossenen P-Kanal-MOSFETs `Q201`, `Q202` aktiviert werden können.
+Jeweils ein Ringoszillator wird durch 3/6 eines [74HCU04](https://assets.nexperia.com/documents/data-sheet/74HCU04.pdf) Hex Inverters `U205` gebildet. Es sind jeweils drei Inverter hintereinandergeschaltet. Der jeweils erste und dritte Inverter sind direkt über ein RC-Reihenglied `C207`/`R210`, `R214`/`C215`, `C208`/`R211`, `R215`/`C216` rückgekoppelt, der gesamte Ringoszillator über einen Kondensator `C212`, `C213`. Beide Ringoszillatoren können durch einen P-Kanal-MOSFET `Q201`, `Q202` am ersten Inverter mit jeweils separater Anteuerung auf +3 V gezogen werden, was Masse am Ausgang entspricht, um sie zu deaktivieren. Weiterhin am Eingang der Inverter verortet sind die Heizwiderstände für die Referenz, die durch Schließen von `Q203`, `Q204` bei geschlossenen P-Kanal-MOSFETs `Q201`, `Q202` aktiviert werden können.
 
-Der Rückkopplungspfad für die Temperaturmessung besteht aus einer Hintereinanderschaltung von 2/3 Buffern eines [74LVC3G34](https://assets.nexperia.com/documents/data-sheet/74LVC3G34.pdf) `U207` und zwei Widerständen `R219` und `R223`, die vermutlich der Feinabstimmung der Resonanzfrequenz dienen. Daran schließen sich vier Single-Pole-Single-Throw(SPST)-Schalter [TS3A4751](http://www.ti.com/lit/ds/symlink/ts3a4751.pdf) `U201` an, deren NO mit dem Ausgang des Buffers verbunden ist, und die jeweils einen der vier möglichen Messwiderstände in die Rückkoppelschleife schalten. Der Messabgriff besfindet sich zwischen Buffer und Schalter mit einem Reihenwiderstand `R224`.
+Der Rückkopplungspfad für die Temperaturmessung besteht aus einer Hintereinanderschaltung von 2/3 Buffern eines [74LVC3G34](https://assets.nexperia.com/documents/data-sheet/74LVC3G34.pdf) `U207` und zwei Widerständen `R219` und `R223`, die vermutlich der Feinabstimmung der Resonanzfrequenz dienen. Daran schließen sich vier Single-Pole-Single-Throw(SPST)-Schalter [TS3A4751](http://www.ti.com/lit/ds/symlink/ts3a4751.pdf) `U201` an, deren NO mit dem Ausgang des Buffers verbunden ist, und die jeweils einen der vier möglichen Messwiderstände (Temperatur/Feuchtigkeit/Ref1/Ref2) in die Rückkopplungspfad schalten. Der Messabgriff besfindet sich zwischen Buffer und Schalter mit einem Reihenwiderstand `R224`.
 
-Im Rückkopplungspfad der Feuchtigkeitsmessung befindet sich eine Schaltung aus dem verbleibenden Buffer und zwei Widerständen `R226` und R220, Der Messabgriff erfolgt genau wie bei der Temperaturmessung durch einen Widerstand `R225`. Weiterhin im Rückkopplungspfad befinden sich drei SPDT-Schalter [TS5A9411](http://www.ti.com/lit/ds/symlink/ts5a9411.pdf) `U202-204`, die den Mess- und Refernzkondensator entweder in das Rückkopplungsnetzwerk, oder gegen Masse schalten. U205 weist zwischen COM und dem Eingang des ersten Buffers, wo sich normalerweise ein Referenzkondensator befinden sollte, keine Verbindung auf, sodass dieser Schalter keinen offensichtlichen Zweck erfüllt. Da er aber wie die anderen beiden auch in Software angesteuert wird, kann vermutet werden, dass die Schalter eine exemplarunabhängige nichtlineare Wirkung auf die Rückkopplungsfrequenz aufweisen, die an mit diesem Schalter gemessen wird, um sie zu kompensieren. Parallel zu den Schaltern wird fix mit dem Widerstand `R212` rückgekoppelt.
+Im Rückkopplungspfad der Feuchtigkeitsmessung befindet sich eine Schaltung aus dem verbleibenden Buffer und zwei Widerständen `R226` und R220, Der Messabgriff erfolgt genau wie bei der Temperaturmessung durch einen Widerstand `R225`. Weiterhin im Rückkopplungspfad befinden sich drei SPDT-Schalter [TS5A9411](http://www.ti.com/lit/ds/symlink/ts5a9411.pdf) `U202-204`, die den Mess- und Referenzkondensator entweder in das Rückkopplungsnetzwerk, oder gegen Masse schalten. U205 weist zwischen COM und dem Eingang des ersten Buffers, wo sich normalerweise ein Referenzkondensator befinden sollte, keine Verbindung auf, sodass dieser Schalter keinen offensichtlichen Zweck erfüllt. Da er aber wie die anderen beiden auch in Software angesteuert wird, kann vermutet werden, dass die Schalter eine exemplarunabhängige nichtlineare Wirkung auf die Rückkopplungsfrequenz aufweisen, die an mit diesem Schalter gemessen wird, um sie zu kompensieren. Parallel zu den Schaltern wird fix mit dem Widerstand `R212` rückgekoppelt.
 
 Die beiden Messausgänge werden in einem NOR-Gatter `U208` umgesetzt und das Ergebnis an den MCU geführt, sodass immer nur eine Messung durchgeführt werden kann. Messungen mit dem Logic Analyzer zeigen, dass die Temperatur zwei Mal pro Sekunde und die Feuchtigkeit ein Mal pro Sekunde gemessen wird.
 
@@ -139,8 +139,6 @@ Auf dem 2x5 2 mm Pinheader `J602` an der Unterkante der Sonde sind herausgeführ
                   -------
 ```
 
-Es ist also möglich, den Mikrocontroller extern zu versorgen, was das Power Cycling für den Angriff auf die Verschlüsselung des Flashspichers u.U. vereinfacht.
-
 ## Interner Erweiterungssteckverbinder
 Der interne Erweiterungssteckverbinder `J601` führt den geteilten SPI-Bus sowie zwei CS-Signale, von denen eines mit dem EEPROM geteilt ist, sowie die Boostspannung 3,8 V und MCU-Spannung 3 V heraus. Es sind unbelegte Pins vorhanden, die z.B. zum Programmieren des Mezzanine-Boards genutzt werden können.
 
@@ -156,7 +154,7 @@ Der Typ des Steckverbinders ist unbekannt und nicht trivial auffindbar. Die Date
 Es wäre wünschenswert, den Steckverbindertypen für eigene Entwicklungen herauszufinden. Die "Tough Contact" P5KF Steckverbinder von Panasonic Electric Works könnten auf den ersten Blick kompatibel sein.
 
 ## NFC-Interface
-Über das NFC-Interface kann die Sonde eingeschaltet und parametriert werden. Die Auswertung erfolgt diskret im Mikrocontroller, da es kein integriertes NFC-Frontend gibt, welches diese "Wakeup"-Funktionalität bereitstellt. 
+Über das NFC-Interface kann die Sonde eingeschaltet und parametriert werden. Die Auswertung erfolgt, vermutlich mittels Bit-Banging, im Mikrocontroller, da es kein integriertes NFC-Frontend gibt, welches diese "Wakeup"-Funktionalität bereitstellt. 
 
 NFC basiert im Wesentlichen auf zwei Mechanismen zum Senden und Empfangen von Daten
 * Wenn das Groundcheck Device Daten an die Sonde schickt, pulst sie den 13,56 MHz Träger entsprechend der Daten
@@ -166,7 +164,7 @@ Die empfangenen Daten werden in der Sonde differenziell empfangen. Parallel zur 
 
 Der andere Anschluss wird mit `D603` erneut gegen Masse geclamped und über `R603` wird das einweggleichgerichtete Signal DC-mäßig an Masse gekoppelt, sowie mit `C602` AC-gekoppelt. `R601` und `R604` biasen diese AC-Kopplung, bevor das Signal durch einen RC Tiefpass `R602`/`C603` gefiltert und mit `D601` gegen die Versorgungsspannung des MCU geclamped wird.
 
-Die Modulation des Lastwiderstandes wird mithilfe eines Abgriffs vor der Doppeldiode zur Spannungsversorgung vorgenommen, an dem ein Anschluss der Spule über `R605` und den N-Channel-MOSFET `Q601` an Masse gekoppelt werden kann. Damit kann für eine Hälfte des Wechselspannungssignal ein Strompfad über `R605`, `Q601` und `R603` hergestellt werden.
+Die Modulation des Lastwiderstandes wird mithilfe eines Abgriffs vor der Doppeldiode zur Spannungsversorgung vorgenommen, indem ein Anschluss der Spule über `R605` und den N-Channel-MOSFET `Q601` an Masse geführt wird. Damit kann für eine Hälfte des Wechselspannungssignals ein Strompfad über `R605`, `Q601` und `R603` hergestellt werden.
 
 # Last but not least
 Einig Projektideen, was man mit dem gewonnenen Wissen anstellen kann
@@ -175,4 +173,4 @@ Einig Projektideen, was man mit dem gewonnenen Wissen anstellen kann
 * alternative Firmware für Radiosonden-Nutzung im 400 MHz Band
 * Verwendung als IoT Wohnraumsensoren im 433 MHz ISM-Band
 * Verwendung als LoRaWAN-Nodes im 433 MHz ISM-Band
-* Entwicklung eigener Mezzanine-Boards für platzsparende Messerweiterungen, denkbar wäre ein Strahlungssensor
+* Entwicklung eigener Mezzanine-Boards für platzsparende Messerweiterungen
