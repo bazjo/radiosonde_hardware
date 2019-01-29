@@ -118,10 +118,7 @@ The following interfaces are provided
 * NFC interface
 
 ## EEPROM
-On the back of the board there is a footprint for an SPI-EEPROM `U601` with generic pinout, which shares the SPI bus with radio and internal expansion connector. This is most likely used to implement the Radio Silence Mode in the military version RS41-SGM, but so far no such sonde finding is known to confirm this hypothesis. In Radio Silence Mode, the probe stores the ascent readings up to a certain altitude or time and sends them to the ground station alternating with the current frames. Since the internal memory of the MCU used, even in a configuration with more memory, is not sufficient for this purpose, the use of an EEPROM for this purpose seems to make sense.
-
-## EEPROM
-On the back of the board there is a footprint for an SPI-EEPROM `U601` with generic pinout, which shares the SPI bus with radio and internal expansion connector. This is most likely used to implement the Radio Silence Mode in the military version RS41-SGM, but so far no such probe is known to confirm this hypothesis. In Radio Silence Mode, the probe stores the ascent readings up to a certain altitude or time and sends them to the ground station alternating with the current frames. Since the internal memory of the MCU used, even in a configuration with more memory, is not sufficient for this purpose, the use of an EEPROM for this purpose seems to make sense.
+On the back of the board there is a footprint for an SPI-EEPROM `U601` with generic pinout, which shares the SPI bus with radio and internal expansion connector. This is most likely used to implement the Radio Silence Mode in the military version RS41-SGM, but so far no such sonde finding is known to confirm this hypothesis. In Radio Silence Mode, the sonde stores the ascent readings up to a certain altitude or time and sends them to the ground station alternating with the current frames. Since the internal memory of the MCU used, even in a configuration with more memory, is not sufficient for this purpose, the use of an EEPROM for this purpose seems to make sense.
 
 ## XDATA and programming connectors
 On the 2x5 2 mm pinheader `J602` at the lower edge of the sonde the following connections are brought out
