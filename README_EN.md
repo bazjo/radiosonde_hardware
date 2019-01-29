@@ -24,7 +24,7 @@ Pull requests with improvements, translations and bug fixes are welcome!
 # Introduction
 The sonde is to be divided into six functional blocks, which are highlighted in the following picture.
 
-* [Power Supply](#Power supply)
+* [Power Supply](#powersupply)
 * [Microcontroller](#microcontroller)
 * [Front end](#frontend)
 * [GPS](#gps)
@@ -33,7 +33,7 @@ The sonde is to be divided into six functional blocks, which are highlighted in 
 
 Reverse engineering is complicated by the fact that the circuit board has four layers.
 
-# Power supply
+# Powersupply
 ![Power Supply](__used_asset__/supply_sch.png?raw=true "Power Supply")
 
 The power supply can be divided into three parts
@@ -68,7 +68,7 @@ Finally, the battery voltage itself can also be evaluated by the MCU via the vol
 
 The microcontroller is a [STM32F100C8](https://www.st.com/resource/en/datasheet/stm32f100c8.pdf) `U101` from ST in LQFP48 package, which gets its clock from the 24 MHz crystal `X101`. Apart from the fact that all IO pins are used, it is only worth mentioning that RC low pass filters are present at many outputs.
 
-# Measuring frontend
+# Frontend
 ![Measuring frontend](__used_asset__/frontend_sch.png?raw=true "Measuring frontend")
 
 ## Circuit arrangement
