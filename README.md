@@ -3,6 +3,8 @@
 - You are welcome to tell me other users to add.
 - Any help is very appreciated. If you find errors or typos, please notify me or change yourself.
 - All of this will get published in the next few month, depending on when I have the time to add further stuff.
+-
+- Please only commit in the development branch so I can overview changes before merging!
 ```
 
 # RS41_ReverseEngineering
