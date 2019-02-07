@@ -1,3 +1,9 @@
+```diff
+- Please DO NOT share ANY of this information with ANY user outside github at this point. You are welcome to tell me other users to add.
+- Any help is very appreciated. If you find errors or typos, please notify me or change yourself.
+- All of this will get published in the next few month, depending on when I have the time to complete it enough (bachelor thesis fun at the moment)
+```
+
 # RS41_ReverseEngineering
 For general information about radiosondes [Wikipedia](https://de.wikipedia.org/wiki/Radiosonde).
 
