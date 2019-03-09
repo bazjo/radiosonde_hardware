@@ -1,6 +1,6 @@
 # RS41_ReverseEngineering
 
-ACHTUNG! Die deutsche Version wird nich so regelmäßig up to date gehalten wie die englische! je nach ddatum des letzten commits ist es vielleicht besser, in die englische Version zu schauen!
+ACHTUNG! Die deutsche Version wird nicht so regelmäßig up to date gehalten wie die Englische! je nach Datum des letzten Commits ist es vielleicht besser, in die englische Version zu schauen!
 
 Für allgemeine Informationen über Radiosonden [Wikipedia](https://de.wikipedia.org/wiki/Radiosonde).
 
