@@ -46,7 +46,7 @@ The power supply can be divided into three parts
 A [TPS61200](http://www.ti.com/lit/ds/symlink/tps61200.pdf) `U502` from TI is used for the boost converter, whose circuitry corresponds to the typical application. The input circuit contains an SMD fuse `R502` and a clamping diode `D501`. Between battery and boost converter there is a P-channel MOSFET `Q501`, which is closed by the pull-up resistor `R501` during storage. `Q501` can be opened or closed by a hardwired logic (see below) to switch the sonde on or off.
 
 ## LDOs
-TVS70030](http://www.ti.com/lit/ds/symlink/tlv700-q1.pdf) from TI are used. `U501` generates the voltage for the microcontroller (MCU), `U503` for the measurement frontend and `U504` for the GPS module. Pin 4 of the LDOs, which is NC according to the data sheet, is decoupled against ground, probably so that pin compatible versions like the [MAX8887](https://datasheets.maximintegrated.com/en/ds/MAX8887-MAX8888.pdf) can be used.
+[TVS70030](http://www.ti.com/lit/ds/symlink/tlv700-q1.pdf) from TI are used. `U501` generates the voltage for the microcontroller (MCU), `U503` for the measurement frontend and `U504` for the GPS module. Pin 4 of the LDOs, which is NC according to the data sheet, is decoupled against ground, probably so that pin compatible versions like the [MAX8887](https://datasheets.maximintegrated.com/en/ds/MAX8887-MAX8888.pdf) can be used.
 
 ## Hard wired logic
 The P-channel MOSFET Q501 discussed above is controlled by an N-channel MOSFET `Q502`. 
