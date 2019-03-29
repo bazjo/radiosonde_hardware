@@ -1,4 +1,4 @@
-# RS41_ReverseEngineering
+# RS41 Hardware
 For general information about radiosondes [Wikipedia](https://en.wikipedia.org/wiki/Radiosonde).
 
 For more information about the RS41 [my website](https://sondehunt.de/language/en/vaisala-rs41).
