@@ -8,9 +8,9 @@
 ```
 
 # RS41_ReverseEngineering
-For general information about radiosondes [Wikipedia](https://de.wikipedia.org/wiki/Radiosonde).
+For general information about radiosondes [Wikipedia](https://en.wikipedia.org/wiki/Radiosonde).
 
-For more information about the RS41 [my website](https://example.com).
+For more information about the RS41 [my website](https://sondehunt.de/language/en/vaisala-rs41).
 
 The blockwise structure of the RS41 is described in the following. The schematic in Eagle format, Logic Analyzer recordings of the functional blocks and high-resolution scans of the printed circuit boards are also provided.
 
@@ -19,16 +19,16 @@ The examination of the RPM411 daughter board with barometric sensor and the OIF4
 Pull requests with improvements, translations and bug fixes are welcome!
 
 # ToDo
-* identify unidentified components
-* find unknown connections
-* identify values of passive components
-* find out which of the resistors entered in the schematic are in fact ESD-Surpressors etc..
-* front end measurement in the climate chamber
-* detailed description of the SPI bus
-* detailed description of the UART between GPS and MCU
-* functional investigation NFC interface
-* sniffing of communication between RI41 Groundcheck Device and RS41
-* receive and reverse flashdump of the controller
+- [ ] identify unidentified components
+- [ ] find unknown connections
+- [ ] identify values of passive components
+- [ ] find out which of the resistors entered in the schematic are in fact ESD-Surpressors etc..
+- [ ] front end measurement in the climate chamber
+- [ ] detailed description of the SPI bus
+- [ ] detailed description of the UART between GPS and MCU
+- [ ] functional investigation NFC interface
+- [ ] sniffing of communication between RI41 Groundcheck Device and RS41
+- [ ] receive and reverse flashdump of the controller
 
 # Introduction
 The sonde is to be divided into six functional blocks, which are highlighted in the following picture.
@@ -106,16 +106,17 @@ The heating of the humidity sensor is controlled by an unidentified component `U
 # GPS
 ![GPS](__used_asset__/gps_sch.png?raw=true "GPS")
 
-The GPS module [UBX-6010](__used_asset__/gps_datasheet.pdf?raw=true) `U302` is connected to the MCU via a UART. Apart from the discrete SAW filter and LNA, the circuitry corresponds essentially to the typical application. The IC is not recommended for new designs.
+The GPS module [UBX-6010](__used_asset__/gps_datasheet.pdf?raw=true) `U302` is connected to the MCU via a UART. Apart from the discrete SAW filter and LNA, the circuitry corresponds essentially to the typical application.
 
 # Radio
 ![Radio](__used_asset__/radio_sch.png?raw=true "Radio")
 
-The radio interface is a one-chip solution with the [Si4032](https://www.silabs.com/documents/public/data-sheets/Si4030-31-32.pdf) `U401`, which is connected to the MCU via SPI. Worth mentioning are the secondary, unused antenna pad and two  tracks at TX and XOUT, which purpose is currently unidentified.
+The radio interface is a one-chip solution with the [Si4032](https://www.silabs.com/documents/public/data-sheets/Si4030-31-32.pdf) `U401`, which is connected to the MCU via SPI. Worth mentioning are the secondary, unused antenna pad and a track at TX, which purpose is currently unidentified.
+
+The clock for the IC is provided from the oscillitator odf the GPS module, which is however only 26 MHz, it should be 30 MHz. This is not yet added to the schematic.
 
 Two of the three GPIO pins are used. GPIO1 switches the N-channel MOSFETS to heat the reference. GPIO2 has not yet been identified.
 
-The IC is not recommended for new designs.
 
 # Interface
 ![Interface](__used_asset__/interface_sch.png?raw=true "Interface")
