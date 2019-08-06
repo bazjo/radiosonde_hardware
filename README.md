@@ -127,19 +127,21 @@ On the 2x5 2 mm pinheader `J602` at the lower edge of the sonde the following co
  * SWD interface for flashing the MCU
  * Reset pin of the MCU
  * Battery voltage, 3.8 V boost voltage and 3 V MCU voltage
+The mating ribbon connector is from the [Amphenol Minitek](https://www.amphenol-icc.com/minitek-89361710lf.html) series, samples can be ordered for free.
  
  ```
-                  -------
-            GND  | o   o |  XDATA_RX(PB11)
-                 |       |
- XDATA_TX(PB10)  | o   o |  +3V_MCU
-                -        |
-        V_Boost|   o   o |  VBAT
-                -        |
-        MCU_RST  | o   o |  SWCLK(PA14)
-                 |       |
-    SWDIO(PA13)  | o   o |  GND
-                  -------
+ Pinout of XDATA connector                                    Pinout of connected ribbon cable
+                  -------                                     
+            GND  | o   o |  XDATA_RX(PB11)                    > 1  GND
+                 |       |                                      2  XDATA_RX(PB11)
+ XDATA_TX(PB10)  | o   o |  +3V_MCU                             3  XDATA_TX(PB10) 
+                -        |                                      4  +3V_MCU
+        V_Boost|   o   o |  VBAT                                5  V_Boost
+                -        |                                      6  VBAT
+        MCU_RST  | o   o |  SWCLK(PA14)                         7  MCU_RST
+                 |       |                                      8  SWCLK(PA14)
+    SWDIO(PA13)  | o   o |  GND                                 9  SWDIO(PA13)
+                  -------                                      10  GND
 ```
 
 ## Internal expansion connector
