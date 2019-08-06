@@ -127,6 +127,7 @@ On the 2x5 2 mm pinheader `J602` at the lower edge of the sonde the following co
  * SWD interface for flashing the MCU
  * Reset pin of the MCU
  * Battery voltage, 3.8 V boost voltage and 3 V MCU voltage
+ 
 The mating ribbon connector is from the [Amphenol Minitek](https://www.amphenol-icc.com/minitek-89361710lf.html) series, samples can be ordered for free.
  
  ```
