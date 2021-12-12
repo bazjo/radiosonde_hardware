@@ -107,7 +107,7 @@ Das GPS-Modul [UBX-6010](__used_asset__/gps_datasheet.pdf?raw=true) `U302` ist �
 
 Das Radio-Interface ist eine One-Chip-Solution mti dem [Si4032](https://www.silabs.com/documents/public/data-sheets/Si4030-31-32.pdf) `U401`, der über SPI mit dem MCU verbunden ist. Erwähnenswert sind neben dem sekundären, unbenutzten Antennen-Pad zwei nicht zuortbare Leiterbahnen an TX und XOUT.
 
-Von den drei GPIO-Pins werden zwei verwendet. GPIO1 schaltet die N-Kanal-MOSFETS, um die Referenz zu beheizen. GPIO2 ist bisher nicht identifiziert.
+GPIO1 schaltet die N-Kanal-MOSFETS, um die Referenz zu beheizen.
 
 # Interface
 ![Interface](__used_asset__/interface_sch.png?raw=true "Interface")
