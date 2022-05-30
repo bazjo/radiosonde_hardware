@@ -104,9 +104,9 @@ The GPS module [UBX-6010](__used_asset__/gps_datasheet.pdf?raw=true) `U302` is c
 
 The radio interface is a one-chip solution with the [Si4032](https://www.silabs.com/documents/public/data-sheets/Si4030-31-32.pdf) `U401`, which is connected to the MCU via SPI. Worth mentioning are the secondary, unused antenna pad and a track at TX, which purpose is currently unidentified.
 
-The clock for the IC is provided from the oscillitator odf the GPS module, which is however only 26 MHz, it should be 30 MHz. This is not yet added to the schematic.
+The clock for the IC is provided from the oscillitator odf the GPS module, which is however only 26 MHz, it should be 30 MHz. This has to be taken into account when setting up radio frequencies.
 
-Two of the three GPIO pins are used. GPIO1 switches the N-channel MOSFETS to heat the reference. GPIO2 has not yet been identified.
+GPIO1 switches the N-channel MOSFETS to heat the reference.
 
 
 # Interface
