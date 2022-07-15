@@ -12847,7 +12847,7 @@ Source: www.kingbright.com</description>
 </class>
 </classes>
 <parts>
-<part name="U101" library="rs41" deviceset="STM32F100C8" device="LQFP48" package3d_urn="urn:adsk.eagle:package:19290/1"/>
+<part name="U101" library="rs41" deviceset="STM32F100C8" device="LQFP48" package3d_urn="urn:adsk.eagle:package:19290/1" value="STM32F100C8T6B"/>
 <part name="U302" library="rs41" deviceset="UBX-6010" device="MLF56" package3d_urn="urn:adsk.eagle:package:7034635/1"/>
 <part name="U401" library="rs41" deviceset="SI4032" device="QFN204X4" package3d_urn="urn:adsk.eagle:package:7012035/1"/>
 <part name="U502" library="rs41" deviceset="TPS61200" device="" package3d_urn="urn:adsk.eagle:package:7012041/1"/>
