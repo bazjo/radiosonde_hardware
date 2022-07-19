@@ -4,7 +4,7 @@ ACHTUNG! Die deutsche Version wird nicht so regelmäßig up to date gehalten wie
 
 Für allgemeine Informationen über Radiosonden [Wikipedia](https://de.wikipedia.org/wiki/Radiosonde).
 
-Für weitere Informationen über die RS41 [meine Website](https://example.com).
+Für weitere Informationen über die RS41 [meine Website](https://sondehunt.de/vaisala-rs41-german).
 
 Der blockweise Aufbau der RS41 soll im nachfolgenden beschrieben werden. Bereitgestellt wird weiterhin der Schaltplan im Eagle-Format, Logic-Analyzer-Aufzeichnungen der funktionalen Blöcke und hochauflösende Scans der Leiterplatten.
 
