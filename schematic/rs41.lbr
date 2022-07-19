@@ -1530,6 +1530,23 @@ GND</text>
 <pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 </symbol>
+<symbol name="3NOR">
+<description>3 input logic NOR gate</description>
+<wire x1="-1.27" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="-5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-6.35" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-6.35" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.2446" y1="-5.0678" x2="7.5439" y2="0.0507" width="0.4064" layer="94" curve="60.147761" cap="flat"/>
+<wire x1="-1.2446" y1="5.0678" x2="7.5442" y2="-0.0505" width="0.4064" layer="94" curve="-60.148802" cap="flat"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94" curve="-77.319617"/>
+<wire x1="-7.62" y1="0" x2="-5.842" y2="0" width="0.1524" layer="94"/>
+<text x="-7.62" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-12.7" y="2.54" visible="pad" length="middle" swaplevel="1"/>
+<pin name="B" x="-12.7" y="0" visible="pad" length="middle" swaplevel="1"/>
+<pin name="Y" x="12.7" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="C" x="-12.7" y="-2.54" visible="pad" length="middle" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TS3A4751" prefix="U">
@@ -1702,29 +1719,6 @@ GND</text>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:7012041/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="Z27F" prefix="U">
-<gates>
-<gate name="G$1" symbol="XOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT23-6">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN1" pad="1"/>
-<connect gate="G$1" pin="IN2" pad="3"/>
-<connect gate="G$1" pin="IN3" pad="6"/>
-<connect gate="G$1" pin="OUT" pad="4"/>
-<connect gate="G$1" pin="VCC" pad="5"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6240745/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2199,6 +2193,32 @@ GND</text>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC7SZ27">
+<gates>
+<gate name="G$1" symbol="3NOR" x="0" y="0"/>
+<gate name="PSU" symbol="PSU" x="33.02" y="2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="3"/>
+<connect gate="G$1" pin="C" pad="6"/>
+<connect gate="G$1" pin="Y" pad="4"/>
+<connect gate="PSU" pin="GND" pad="2"/>
+<connect gate="PSU" pin="VCC" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6240745/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="https://www.onsemi.com/pdf/datasheet/nc7sz27-d.pdf"/>
+</technology>
 </technologies>
 </device>
 </devices>
