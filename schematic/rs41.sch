@@ -12942,38 +12942,38 @@ Source: www.kingbright.com</description>
 <part name="R209" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10k termistor"/>
 <part name="R206" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="DNP"/>
 <part name="GND217" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C501" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C501" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
 <part name="R501" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10k"/>
-<part name="C502" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C503" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C506" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C502" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="12p"/>
+<part name="C503" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10u"/>
+<part name="C506" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
 <part name="GND505" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND503" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND502" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND501" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND504" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C513" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C513" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
 <part name="GND506" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C514" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C515" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C514" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="12p"/>
+<part name="C515" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10u"/>
 <part name="GND508" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND507" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C521" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C521" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10u"/>
 <part name="GND520" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C516" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C516" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
 <part name="GND518" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND517" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C526" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C526" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
 <part name="GND522" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND521" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C520" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C520" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
 <part name="GND519" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L501" library="PowerMagnetics (rev17e)" deviceset="WE-MAPI_3020" device="" technology="_74438336100" value="2.2µH"/>
-<part name="C512" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C510" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C507" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C508" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C509" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C512" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22u"/>
+<part name="C510" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C507" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22u"/>
+<part name="C508" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22u"/>
+<part name="C509" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="12p"/>
 <part name="R503" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="330k"/>
 <part name="R504" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="51k"/>
 <part name="GND514" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -12983,9 +12983,9 @@ Source: www.kingbright.com</description>
 <part name="GND516" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q501" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="BSS92" device="" package3d_urn="urn:adsk.eagle:package:28523/2" value=""/>
 <part name="Q502" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="BSS101" device="" package3d_urn="urn:adsk.eagle:package:28523/2" value=""/>
-<part name="C505" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C504" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C511" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C505" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100p"/>
+<part name="C504" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="12p"/>
+<part name="C511" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
 <part name="D501" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1" value="tbd"/>
 <part name="GND511" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND510" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -12995,10 +12995,10 @@ Source: www.kingbright.com</description>
 <part name="R512" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="47k"/>
 <part name="R508" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="47k"/>
 <part name="R505" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="20k"/>
-<part name="C523" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C523" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
 <part name="R509" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="47k"/>
 <part name="R513" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="47k"/>
-<part name="C524" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C524" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
 <part name="GND525" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND524" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND526" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13006,15 +13006,15 @@ Source: www.kingbright.com</description>
 <part name="R510" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="178k"/>
 <part name="R514" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="62k"/>
 <part name="R506" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10k"/>
-<part name="C525" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C525" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="150p"/>
 <part name="Q503" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="BSS101" device="" package3d_urn="urn:adsk.eagle:package:28523/2" value=""/>
-<part name="C519" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C518" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C522" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C519" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C518" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C522" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
 <part name="R511" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="100k"/>
 <part name="R507" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="1k"/>
 <part name="S501" library="Wurth_Elektronik_Electromechanic_Switch_rev17c" library_urn="urn:adsk.eagle:library:480" deviceset="434121043816" device="" package3d_urn="urn:adsk.eagle:package:33709/1"/>
-<part name="C517" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C517" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="12p"/>
 <part name="GND532" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND527" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND528" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13027,37 +13027,37 @@ Source: www.kingbright.com</description>
 <part name="X301" library="rs41" deviceset="OSC_GPS" device="XTAL4" package3d_urn="urn:adsk.eagle:package:7070708/1"/>
 <part name="U303" library="rs41" deviceset="SAW" device="" package3d_urn="urn:adsk.eagle:package:7034602/1"/>
 <part name="R303" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="47k"/>
-<part name="C306" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C306" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1n"/>
 <part name="R402" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="2.5µH"/>
-<part name="C410" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C410" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100p"/>
 <part name="R121" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="68R"/>
 <part name="C116" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
 <part name="P+304" library="rs41" deviceset="+3V_GPS" device=""/>
 <part name="P+302" library="rs41" deviceset="+3V_MCU" device=""/>
 <part name="GND307" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C307" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C307" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
 <part name="GND309" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C311" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C314" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C311" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1u"/>
+<part name="C314" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u"/>
 <part name="R305" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="100R"/>
-<part name="C316" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C316" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1u"/>
 <part name="GND320" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND317" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R306" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="100R"/>
 <part name="R307" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="100R"/>
 <part name="R308" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="3.9k"/>
-<part name="C318" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C309" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C312" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C313" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C315" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C308" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C318" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="12p"/>
+<part name="C309" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1u"/>
+<part name="C312" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2u"/>
+<part name="C313" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1u"/>
+<part name="C315" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1u"/>
+<part name="C308" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="15p"/>
 <part name="L301" library="PowerMagnetics (rev17e)" deviceset="WE-MK_0402" device="" technology="_74478410" value="tbd"/>
 <part name="GND308" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND316" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L303" library="PowerMagnetics (rev17e)" deviceset="WE-MK_0402" device="" technology="_74478410" value="tbd"/>
 <part name="L304" library="PowerMagnetics (rev17e)" deviceset="WE-MK_0402" device="" technology="_74478410" value="tbd"/>
-<part name="C310" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C310" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="6p"/>
 <part name="R304" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="0"/>
 <part name="GND315" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND314" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13065,8 +13065,8 @@ Source: www.kingbright.com</description>
 <part name="GND312" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND311" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="A301" library="rs41" deviceset="ANT_GPS" device="CHIPANT" package3d_urn="urn:adsk.eagle:package:7071504/1"/>
-<part name="C317" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C319" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C317" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="12p"/>
+<part name="C319" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1u"/>
 <part name="GND321" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND322" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND323" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13075,14 +13075,14 @@ Source: www.kingbright.com</description>
 <part name="GND319" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+301" library="rs41" deviceset="+3V_MCU" device=""/>
 <part name="GND310" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C303" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C304" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C305" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C303" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1u"/>
+<part name="C304" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1u"/>
+<part name="C305" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1u"/>
 <part name="GND301" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND302" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND303" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C302" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C301" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C302" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C301" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1u"/>
 <part name="R302" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="2.7µH"/>
 <part name="R301" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="2.7µH"/>
 <part name="GND304" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13091,26 +13091,26 @@ Source: www.kingbright.com</description>
 <part name="R202" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100R"/>
 <part name="R201" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100R"/>
 <part name="R205" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="150R"/>
-<part name="C411" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C411" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
 <part name="P+401" library="rs41" deviceset="+3V_MCU" device=""/>
 <part name="GND407" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND406" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C401" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C401" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100p"/>
 <part name="GND401" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C420" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C421" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C419" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C420" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100p"/>
+<part name="C421" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1u"/>
+<part name="C419" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="27p"/>
 <part name="R403" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="68R"/>
 <part name="R406" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10k"/>
 <part name="GND417" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND418" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND416" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND415" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C417" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C416" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C415" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C414" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C413" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C417" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="12p"/>
+<part name="C416" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100p"/>
+<part name="C415" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C414" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10n"/>
+<part name="C413" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="12p"/>
 <part name="R404" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="1µH"/>
 <part name="GND413" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND412" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13120,16 +13120,16 @@ Source: www.kingbright.com</description>
 <part name="L408" library="PowerMagnetics (rev17e)" deviceset="WE-MK_0402" device="" technology="_74478410" value="tbd"/>
 <part name="D401" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1" value="tbd"/>
 <part name="R405" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="0"/>
-<part name="C418" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C418" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="5p"/>
 <part name="GND414" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C404" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C404" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100p"/>
 <part name="L405" library="PowerMagnetics (rev17e)" deviceset="WE-MK_0402" device="" technology="_74478410" value="tbd"/>
 <part name="L404" library="PowerMagnetics (rev17e)" deviceset="WE-MK_0402" device="" technology="_74478410" value="tbd"/>
-<part name="C408" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C407" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C408" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10p"/>
+<part name="C407" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10p"/>
 <part name="L403" library="PowerMagnetics (rev17e)" deviceset="WE-MK_0402" device="" technology="_74478410" value="tbd"/>
-<part name="C406" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C403" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C406" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="5p"/>
+<part name="C403" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="12p"/>
 <part name="L407" library="PowerMagnetics (rev17e)" deviceset="WE-MK_0402" device="" technology="_74478410" value="tbd"/>
 <part name="GND408" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND405" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13137,13 +13137,13 @@ Source: www.kingbright.com</description>
 <part name="GND403" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND402" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L401" library="PowerMagnetics (rev17e)" deviceset="WE-MK_0402" device="" technology="_74478410" value="tbd"/>
-<part name="C402" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C402" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="15p"/>
 <part name="R401" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="51R"/>
 <part name="L402" library="PowerMagnetics (rev17e)" deviceset="WE-MK_0402" device="" technology="_74478410" value="tbd"/>
-<part name="C405" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C405" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1.5p"/>
 <part name="L406" library="PowerMagnetics (rev17e)" deviceset="WE-MK_0402" device="" technology="_74478410" value="tbd"/>
-<part name="C409" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
-<part name="C412" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C409" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0.4p"/>
+<part name="C412" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1.5p"/>
 <part name="P+402" library="rs41" deviceset="+3V_MCU" device=""/>
 <part name="R119" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="68R"/>
 <part name="R117" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="1k"/>
@@ -13221,13 +13221,13 @@ Source: www.kingbright.com</description>
 <part name="J602" library="Board-to-Board (rev17e)" deviceset="62001021121" device="" value="XDATA"/>
 <part name="U601" library="microchip" library_urn="urn:adsk.eagle:library:294" deviceset="25*" device="SN" package3d_urn="urn:adsk.eagle:package:20804/2" technology="AA080"/>
 <part name="J601" library="Board-to-Board (rev17e)" deviceset="62001621121" device="" value="expansion"/>
-<part name="C606" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C606" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1n"/>
 <part name="D606" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1" value="tbd"/>
 <part name="P+602" library="rs41" deviceset="+3V_MCU" device=""/>
 <part name="P+605" library="rs41" deviceset="V_BOOST" device=""/>
 <part name="D605" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1" value="tbd"/>
 <part name="D604" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1" value="tbd"/>
-<part name="C607" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C607" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1n"/>
 <part name="GND614" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND601" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND603" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13239,14 +13239,14 @@ Source: www.kingbright.com</description>
 <part name="D607" library="rs41" deviceset="LD3K" device="SOT23-3" package3d_urn="urn:adsk.eagle:package:5828494/1"/>
 <part name="GND605" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND611" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C605" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C605" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="15p"/>
 <part name="R603" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10k"/>
 <part name="D603" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1" value="tbd"/>
-<part name="C602" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C602" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
 <part name="R601" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="100k"/>
 <part name="R604" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="330k"/>
 <part name="R602" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="1k"/>
-<part name="C603" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="tbd"/>
+<part name="C603" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="200p"/>
 <part name="D601" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1" value="tbd"/>
 <part name="P+603" library="rs41" deviceset="+3V_MCU" device=""/>
 <part name="P+604" library="rs41" deviceset="+3V_MCU" device=""/>
@@ -15561,8 +15561,8 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="96.52" y="20.32" size="1.778" layer="96"/>
 </instance>
 <instance part="L302" gate="G$1" x="-71.12" y="66.04" smashed="yes">
-<attribute name="NAME" x="-73.66" y="68.58" size="1.27" layer="95"/>
-<attribute name="VALUE" x="-73.66" y="63.5" size="1.27" layer="96"/>
+<attribute name="NAME" x="-73.66" y="68.58" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-73.66" y="63.5" size="1.778" layer="96"/>
 </instance>
 <instance part="U301" gate="G$1" x="12.7" y="63.5" smashed="yes">
 <attribute name="NAME" x="15.24" y="50.8" size="1.778" layer="95"/>
@@ -15663,8 +15663,8 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="-8.636" y="56.261" size="1.778" layer="96"/>
 </instance>
 <instance part="L301" gate="G$1" x="-12.7" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="-15.24" y="73.66" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-10.16" y="73.66" size="1.27" layer="96" rot="R90"/>
+<attribute name="NAME" x="-15.24" y="73.66" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-10.16" y="73.66" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND308" gate="1" x="-7.62" y="71.12" smashed="yes">
 <attribute name="VALUE" x="-10.16" y="68.58" size="1.778" layer="96"/>
@@ -15673,12 +15673,12 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="7.62" y="40.64" size="1.778" layer="96"/>
 </instance>
 <instance part="L303" gate="G$1" x="-22.86" y="66.04" smashed="yes">
-<attribute name="NAME" x="-25.4" y="68.58" size="1.27" layer="95"/>
-<attribute name="VALUE" x="-25.4" y="63.5" size="1.27" layer="96"/>
+<attribute name="NAME" x="-25.4" y="68.58" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-25.4" y="63.5" size="1.778" layer="96"/>
 </instance>
 <instance part="L304" gate="G$1" x="-109.22" y="55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="-111.76" y="53.34" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-106.68" y="53.34" size="1.27" layer="96" rot="R90"/>
+<attribute name="NAME" x="-111.76" y="53.34" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-106.68" y="53.34" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C310" gate="G$1" x="-124.46" y="58.42" smashed="yes">
 <attribute name="NAME" x="-120.396" y="58.801" size="1.778" layer="95"/>
@@ -16377,8 +16377,8 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="-45.72" y="0" size="1.778" layer="96"/>
 </instance>
 <instance part="L408" gate="G$1" x="15.24" y="17.78" smashed="yes">
-<attribute name="NAME" x="12.7" y="20.32" size="1.27" layer="95"/>
-<attribute name="VALUE" x="12.7" y="15.24" size="1.27" layer="96"/>
+<attribute name="NAME" x="12.7" y="20.32" size="1.778" layer="95"/>
+<attribute name="VALUE" x="12.7" y="15.24" size="1.778" layer="96"/>
 </instance>
 <instance part="D401" gate="1" x="12.7" y="39.37" smashed="yes" rot="R90">
 <attribute name="NAME" x="16.51" y="38.5826" size="1.778" layer="95"/>
@@ -16400,12 +16400,12 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="19.304" y="48.641" size="1.778" layer="96"/>
 </instance>
 <instance part="L405" gate="G$1" x="2.54" y="45.72" smashed="yes">
-<attribute name="NAME" x="0" y="48.26" size="1.27" layer="95"/>
-<attribute name="VALUE" x="0" y="43.18" size="1.27" layer="96"/>
+<attribute name="NAME" x="0" y="48.26" size="1.778" layer="95"/>
+<attribute name="VALUE" x="0" y="43.18" size="1.778" layer="96"/>
 </instance>
 <instance part="L404" gate="G$1" x="-17.78" y="45.72" smashed="yes">
-<attribute name="NAME" x="-20.32" y="48.26" size="1.27" layer="95"/>
-<attribute name="VALUE" x="-20.32" y="43.18" size="1.27" layer="96"/>
+<attribute name="NAME" x="-20.32" y="48.26" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-20.32" y="43.18" size="1.778" layer="96"/>
 </instance>
 <instance part="C408" gate="G$1" x="-7.62" y="40.64" smashed="yes">
 <attribute name="NAME" x="-3.556" y="38.481" size="1.778" layer="95"/>
@@ -16416,8 +16416,8 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="-23.876" y="35.941" size="1.778" layer="96"/>
 </instance>
 <instance part="L403" gate="G$1" x="-38.1" y="45.72" smashed="yes">
-<attribute name="NAME" x="-40.64" y="48.26" size="1.27" layer="95"/>
-<attribute name="VALUE" x="-40.64" y="43.18" size="1.27" layer="96"/>
+<attribute name="NAME" x="-40.64" y="48.26" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-40.64" y="43.18" size="1.778" layer="96"/>
 </instance>
 <instance part="C406" gate="G$1" x="-48.26" y="40.64" smashed="yes">
 <attribute name="NAME" x="-44.196" y="38.481" size="1.778" layer="95"/>
@@ -16428,8 +16428,8 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="-54.356" y="48.641" size="1.778" layer="96"/>
 </instance>
 <instance part="L407" gate="G$1" x="-60.96" y="33.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="-63.5" y="30.48" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-58.42" y="30.48" size="1.27" layer="96" rot="R90"/>
+<attribute name="NAME" x="-63.5" y="30.48" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-58.42" y="30.48" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND408" gate="1" x="-60.96" y="20.32" smashed="yes">
 <attribute name="VALUE" x="-63.5" y="17.78" size="1.778" layer="96"/>
@@ -16447,8 +16447,8 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="-50.8" y="27.94" size="1.778" layer="96"/>
 </instance>
 <instance part="L401" gate="G$1" x="12.7" y="58.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.16" y="55.88" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="15.24" y="55.88" size="1.27" layer="96" rot="R90"/>
+<attribute name="NAME" x="10.16" y="55.88" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="15.24" y="55.88" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C402" gate="G$1" x="5.08" y="59.69" smashed="yes">
 <attribute name="NAME" x="-3.556" y="60.071" size="1.778" layer="95"/>
@@ -16459,16 +16459,16 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="-3.81" y="67.818" size="1.778" layer="96"/>
 </instance>
 <instance part="L402" gate="G$1" x="-71.12" y="45.72" smashed="yes">
-<attribute name="NAME" x="-73.66" y="48.26" size="1.27" layer="95"/>
-<attribute name="VALUE" x="-73.66" y="43.18" size="1.27" layer="96"/>
+<attribute name="NAME" x="-73.66" y="48.26" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-73.66" y="43.18" size="1.778" layer="96"/>
 </instance>
 <instance part="C405" gate="G$1" x="-72.39" y="41.91" smashed="yes" rot="R90">
 <attribute name="NAME" x="-68.326" y="39.751" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-68.326" y="37.211" size="1.778" layer="96"/>
 </instance>
 <instance part="L406" gate="G$1" x="-83.82" y="38.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="-86.36" y="35.56" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-81.28" y="35.56" size="1.27" layer="96" rot="R90"/>
+<attribute name="NAME" x="-86.36" y="35.56" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-81.28" y="35.56" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C409" gate="G$1" x="-96.52" y="20.32" smashed="yes" rot="R180">
 <attribute name="NAME" x="-92.456" y="20.701" size="1.778" layer="95"/>
@@ -17014,8 +17014,8 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="114.3" y="-17.78" size="1.778" layer="96"/>
 </instance>
 <instance part="L501" gate="G$1" x="38.1" y="53.34" smashed="yes">
-<attribute name="NAME" x="35.56" y="55.88" size="1.27" layer="95"/>
-<attribute name="VALUE" x="40.64" y="55.88" size="1.27" layer="96"/>
+<attribute name="NAME" x="33.02" y="55.88" size="1.778" layer="95"/>
+<attribute name="VALUE" x="40.64" y="55.88" size="1.778" layer="96"/>
 </instance>
 <instance part="C512" gate="G$1" x="15.24" y="33.02" smashed="yes">
 <attribute name="NAME" x="6.604" y="30.861" size="1.778" layer="95"/>
