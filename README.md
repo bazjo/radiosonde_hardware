@@ -43,7 +43,7 @@ The power supply can be divided into three parts
 * a hard-wired logic determines the operating state of the boost converter and thus of the sonde
 
 ## Boost converter
-A [TPS61200](http://www.ti.com/lit/ds/symlink/tps61200.pdf) `U502` from TI is used for the boost converter, whose circuitry corresponds to the typical application. The input circuit contains an SMD fuse `R502` and a clamping diode `D501`. Between battery and boost converter there is a P-channel MOSFET `Q501`, which is closed by the pull-up resistor `R501` during storage. `Q501` can be opened or closed by a hardwired logic (see below) to switch the sonde on or off.
+A [TPS61200](http://www.ti.com/lit/ds/symlink/tps61200.pdf) `U502` from TI is used for the boost converter, whose circuitry corresponds to the typical application. The input circuit contains an SMD fuse `F501` and a clamping diode `D501`. Between battery and boost converter there is a P-channel MOSFET `Q501`, which is closed by the pull-up resistor `R501` during storage. `Q501` can be opened or closed by a hardwired logic (see below) to switch the sonde on or off.
 
 ## LDOs
 [TVS70030](http://www.ti.com/lit/ds/symlink/tlv700-q1.pdf) from TI are used. `U501` generates the voltage for the microcontroller (MCU), `U503` for the measurement frontend and `U504` for the GPS module. Pin 4 of the LDOs, which is NC according to the data sheet, is decoupled against ground, probably so that pin compatible versions like the [MAX8887](https://datasheets.maximintegrated.com/en/ds/MAX8887-MAX8888.pdf) can be used.
@@ -77,7 +77,7 @@ Mechanically, the front end consists of the sensor boom, which is made of Flex P
 * Measurement of the temperature of the module using a PT1000 as a feedback variable for controlling the module heating.
 * Module heating via a thick film resistor. During flight, the module is kept 5 K above ambient to prevent condensation. During the preflight check it is heated to remove impurities and to perform a zero humidity check. There is no on-site calibration in the Ground Check Device for temperature.
 
-In addition, two reference resistors `R208` and `R209`, one reference capacitor `C209`, five heating resistors `R201-205` and the MOSFETs `Q203-204,` required to control these resistors, as well as an unidentified component `R209`, which could be a thermistor, are available on an area delimited by milled slots from the rest of the printed circuit board. No heating of the references could be observed in tests at room temperature.
+In addition, two reference resistors `R208` and `R209`, one reference capacitor `C209`, five heating resistors `R201-205` and the MOSFETs `Q203-204,` required to control these resistors, as well as an thermistor `R209`, are available on an area delimited by milled slots from the rest of the printed circuit board. No heating of the references could be observed in tests at room temperature.
 
 ## Circuit topology
 Electrically seen, the frontend consists of two ring oscillators for temperature and humidity, whose frequency is varied by variable impedances (e.g. the sensors) inserted into the feedback path with the help of analog switches.

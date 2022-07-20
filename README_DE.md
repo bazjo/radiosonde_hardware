@@ -46,7 +46,7 @@ Die Stromversorgung lässt sich in drei Teile einteilen
 * eine hartverdrahtete Logik ermittelt den Betriebszustand des Boostconverters und damit der Sonde
 
 ## Boost-Converter
-Als Boost-Converter kommt ein [TPS61200](http://www.ti.com/lit/ds/symlink/tps61200.pdf) `U502` von TI zum Einsatz, desen Beschaltung der Typical Application entspricht. Im Eingangskreis befindet sich zunächst eine SMD-Sicherung `R502` und eine Clamping-Diode `D501`. Zwischen Batterie und Boost-Converter befindet sich ein P-Kanal MOSFET `Q501`, der während der Lagerung durch den Pullup-Widerstand `R501` geschlossen ist. `Q501` kann durch eine hartverdahtete Logik (s.u.) geöffnet oder wieder geschlossen werden, um die Sonde ein- oder auszuschalten.
+Als Boost-Converter kommt ein [TPS61200](http://www.ti.com/lit/ds/symlink/tps61200.pdf) `U502` von TI zum Einsatz, desen Beschaltung der Typical Application entspricht. Im Eingangskreis befindet sich zunächst eine SMD-Sicherung `F501` und eine Clamping-Diode `D501`. Zwischen Batterie und Boost-Converter befindet sich ein P-Kanal MOSFET `Q501`, der während der Lagerung durch den Pullup-Widerstand `R501` geschlossen ist. `Q501` kann durch eine hartverdahtete Logik (s.u.) geöffnet oder wieder geschlossen werden, um die Sonde ein- oder auszuschalten.
 
 ## LDOs
 Es werden [TVS70030](http://www.ti.com/lit/ds/symlink/tlv700-q1.pdf) von TI eingesetzt. `U501` erzeugt die Spannung für den Mikrocontroller (MCU), `U503` für das Mess-Frontend und `U504` für das GPS-Modul. Pin 4 der LDOs, der Laut Datenblatt NC ist, ist gegen Masse entkoppelt, vermutlich damit auch ansonsten pinkompatible Versionen wie der [MAX8887](https://datasheets.maximintegrated.com/en/ds/MAX8887-MAX8888.pdf) eingesetzt werden können.
@@ -80,7 +80,7 @@ Mechanisch besteht das Frontend zum einen aus dem Messfühler, welcher aus Flex-
 * Messung der Temperatur des Moduls mittels PT1000 als Rückführgröße für die Regelung der Modulbeheizung.
 * Modulbehizung über einen Dickschichtwidestand. Während des Fluges wird das Modul 5 K über Umgebungstemeperatur gehalten, um Kondesation zu verhindern. Beim Preflight-Check wird es aufgeheizt, um Verunreinigungen zu entfernen und eine Zero-Humidity-Abgleich durchzuführen. Es findet keine on-site Kalibrierung im Ground Check Device für Temperatur statt.
 
-Weiterhin sind auf einem durch gefräste Slots vom Rest der Leiterplatte abgegrenzten Bereich zwei Referenzwiderstände `R208` und `R209`, ein Refernzkondensator `C209`, fünf Heizwiderstände `R201-205` und die zur Ansteuerung dieser benötigten MOSFETs `Q203-204,` sowie ein unidentifiziertes Bauteil `R209` vorhanden, bei dem es sich um einen Thermistor handeln könnte. Es konnte bei Tests mit Zimmertemperatur kein Heizen der Referenzen beobachtet werden.
+Weiterhin sind auf einem durch gefräste Slots vom Rest der Leiterplatte abgegrenzten Bereich zwei Referenzwiderstände `R208` und `R209`, ein Refernzkondensator `C209`, fünf Heizwiderstände `R201-205` und die zur Ansteuerung dieser benötigten MOSFETs `Q203-204,` sowie ein Thermistor `R209` vorhanden. Es konnte bei Tests mit Zimmertemperatur kein Heizen der Referenzen beobachtet werden.
 
 ## Schaltungstopologie
 ELektrisch gesehen besteht das Frontend aus zwei Ringoszillatoren für Temperatur bzw. Luftfeuchtigkeit, deren Frequenz durch mithilfe von Analogschaltern in den Rückkopplungspfad eingefügten Impedanzen variiert wird.
@@ -105,7 +105,7 @@ Das GPS-Modul [UBX-6010](__used_asset__/gps_datasheet.pdf?raw=true) `U302` ist �
 # Radio
 ![Radio](__used_asset__/radio_sch.png?raw=true "Radio")
 
-Das Radio-Interface ist eine One-Chip-Solution mti dem [Si4032](https://www.silabs.com/documents/public/data-sheets/Si4030-31-32.pdf) `U401`, der über SPI mit dem MCU verbunden ist. Erwähnenswert sind neben dem sekundären, unbenutzten Antennen-Pad zwei nicht zuortbare Leiterbahnen an TX und XOUT.
+Das Radio-Interface ist eine One-Chip-Solution mti dem [Si4032](https://www.silabs.com/documents/public/data-sheets/Si4030-31-32.pdf) `U401`, der über SPI mit dem MCU verbunden ist. Erwähnenswert sind neben dem sekundären, unbenutzten Antennen-Pad zwei nicht zuortbare Leiterbahnen an TX.
 
 GPIO1 schaltet die N-Kanal-MOSFETS, um die Referenz zu beheizen.
 
