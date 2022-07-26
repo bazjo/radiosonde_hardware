@@ -146,7 +146,7 @@ The mating ribbon connector is from the [Amphenol Minitek](https://www.amphenol-
 ```
 
 ## Internal expansion connector
-The internal expansion connector `J601` brings out the shared SPI bus and two GPIO/CS signals, one of which is shared with the EEPROM, as well as the 3.8 V boost voltage and 3 V MCU voltage. There are unused pins which can be used e.g. for programming the mezzanine board.
+The internal expansion connector `J601` brings out the shared SPI bus an CS signal and a clock of unknown frequency, one of which is shared with the EEPROM, as well as the 3.8 V boost voltage and 3 V MCU voltage. There are unused pins which can be used e.g. for programming the mezzanine board.
 
 The RPM411 barometric pressure module is the only mezzanine board in knowledge that uses this connection.
 
