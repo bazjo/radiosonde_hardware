@@ -5,7 +5,7 @@ For more information about the RS41 [my website](https://sondehunt.de/language/e
 
 The blockwise structure of the RS41 is described in the following. The schematic in Eagle format, Logic Analyzer recordings of the functional blocks and high-resolution scans of the printed circuit boards are also provided.
 
-The examination of the RPM411 daughter board with barometric sensor and the OIF411 Ozone interface can be found, as soon as available, in the separate subfolders.
+The examination of the RPM411 daughter board with barometric sensor can be found in a [seperate Repository](https://github.com/TjarkG/RPM411) and the OIF411 Ozone interface, as soon as available, in a separate subfolders.
 
 Pull requests with improvements, translations and bug fixes are welcome!
 
