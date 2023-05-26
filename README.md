@@ -22,6 +22,6 @@ High-Resolution versions of the scans are provided at https://drive.google.com/d
 | Newsky       | [CF-06](Newsky_CF-06AH)        | ✔️      | ✔️        | ✔️                | ❌                    | ❌                    | ❌          |
 | Huayuntianyi | [HT03G](Huayuntianyi_HT03G-1U)       | ✔️      | ✔️        | ✔️                | ❌                    | ❌                    | ❌          |
 | Azista       | [ATMS-3710](Azista_ATMS-3710)    | ✔️      | ✔️        | ✔️                | ❌                    | ❌                    | ❌          |
-| Vikram       | [PS-B3](Vikram_PS-B3)        | ✔️      | ✔️        | ✔️                | (2 Layer PCB)        | ❌                    | ❌          |
+| Vikram       | [PS-B3](Vikram_PS-B3)        | ✔️      | ✔️        | ✔️                | (2 Layer PCB)        | (partially)          | ✔️          |
 
 Other radiosonde models might be added is they fulfil the requirements for relevance and asset quality (photos vs. scans etc.).
