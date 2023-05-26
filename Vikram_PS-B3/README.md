@@ -49,11 +49,13 @@ Results for test flights during [UAII2022](https://www.gruan.org/community/campa
 
 <u>PS-B3 vs. iMS-100/RS-41 at low altitude. Temperature and humidity both match the reference sondes.</u>
 
-![](__used_asset__/20220907_21h_T.png){: width="500px"} ![](__used_asset__/20220907_21h_RH.png){: width="500px"}
+<img src="__used_asset__/20220907_21h_T.png" width="500">
+<img src="__used_asset__/20220907_21h_RH.png" width="500">
 
 <u>PS-B3 vs. iMS-100/RS-41 for altitudes 12...26 km. Temperature still very accurate, but humidity result not useful.</u>
 
-![](__used_asset__/20220811_15h_T.png){: width="500px"} ![](__used_asset__/20220811_15h_RH.png){: width="500px"}
+<img src="__used_asset__/20220811_15h_T.png" width="500">
+<img src="__used_asset__/20220811_15h_RH.png" width="500">
 
 
 ### Powersupply
