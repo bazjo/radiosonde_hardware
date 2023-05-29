@@ -10,7 +10,7 @@
 **Exploded View**
 
 ### MCU and GPS
-![MCU/GPS Block](__used_asset__/psb3-mcu.svg)
+![MCU/GPS Block](__used_asset__/psb3-mcu.png)
 
 #### MCU
 
@@ -25,14 +25,14 @@ A esrvice connector (UART2, 2400 baud) is available at connector JP3. Firmware d
 The Telit JN3 GPS module is located on an external PCB, together with a rather large patch antenna. It is connected to the main board by a separable three-wire connection that carries power (+3.3 V), ground and a UART line operating at 9600 baud. This unidirectional connection means that the main processor doesn't have to (and cannot) configure the GPS module. JN3 operates in NMEA mode, and sends the following NMEA sentences at a rate of one per second: GGA, GSA, GSV, RMC. Of these four sentences, GSV can occur multiple times depending on the number of satellite vehicles in sight/use. The main MCU ignores GSV sentences, however, and only makes use of GGA, GSA and RMC.
 
 ### Radio
-![Radio Block](__used_asset__/psb3-radio.svg)
+![Radio Block](__used_asset__/psb3-radio.png)
 
 The Analog Devices ADF7021 is a transceiver chip of which only the transmitter part is used here. A Qorvo PA boosts the output power to 19 dBm (1 dB compression).
 
 Modulation is 2FSK with 5.0 kHz deviation. Data bits are sent Manchester encoded at a remarkably low rate of 384 bit/s (768 smbols/s).
 
 ### Analog
-![Analog Block](__used_asset__/psb3-analog.svg)
+![Analog Block](__used_asset__/psb3-analog.png)
 
 Ambient temperature is measured by an NTC on the sensor boom. The NTC is biased via a 56k2 resistor from the 1.25 V internal reference of an Analog Devices ADC1218 24-bit ADC. A commercial humidity sensor (Honeywell HIH4021) converts humidity to voltage, and is also connected to the ADS1218. The PS-B3 seems to have an option for an external sensor, which can use an additional channel on the ADC.
 
@@ -59,7 +59,7 @@ Results for test flights during [UAII2022](https://www.gruan.org/community/campa
 
 
 ### Powersupply
-![Power Supply](__used_asset__/psb3-power.svg)
+![Power Supply](__used_asset__/psb3-power.png)
 
 An external battery provides 7.2 V to the board via a cable connector. There is no separate on/off switch.
 
