@@ -36,7 +36,15 @@ Still some stuff missing here...
 
 ## Parts List
 
-Still some stuff missing here...
+Designator | Function            | Manufacturer   | Part Number
+---------- | ------------------- | -------------- | ---------------
+U1         | MCU                 | STM            | [STM32L051R6T6](https://www.st.com/resource/en/datasheet/stm32l051r6.pdf)
+U2         | GPS Receiver        | Sierra         | [XM1110]()
+U3         | Pressure Sensor (optional)  | STM            | [LPS22HB](https://www.st.com/resource/en/datasheet/lps22hb.pdf)
+U101       | Switching Regulator | Microchip      | [MCP1642B-ADJI/MS]()
+U102-104   | LDO                 | TI             | [LP5907MFX-3.3]()
+U201       | Transmitter         | Analog Devices | [ADF7012]()
+U301       | RC Oscillator       | X              | [TL555I]()
 
 ## Detail Photos
 
